@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+
+
+
+<head>
+	<meta charset="utf-8">
+	<title>Introducción</title>
+	
+	<link rel="icon" type="image/png" href="imagenes/favicon_192.png" />
+	
+    <link rel="stylesheet" href="./style.css" type="text/css" media="all" />
+	
+	<script type="text/javascript"
+	    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+	</script>
+	
+	<script type="text/x-mathjax-config">
+		MathJax.Hub.Config({
+		tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+		});
+	</script>
+	
+</head>
+
+
+<div id="header">
+<nav>
+	<ul class="fullnav">
+		<li>
+		<a href="index.html">Inicio</a>
+		</li>
+		<li>
+		<a href="#">Corriente Alterna</a>
+		<ul>
+			<li><a href="URL_DESTINO">Monofásico</a></li>
+			<li><a href="URL_DESTINO">Trifásico</a></li>
+			<li><a href="URL_DESTINO">Potencia</a></li>
+		</ul>
+		</li>
+		<li>
+		<a href="medidas.html">Técnicas de medida</a>
+		</li>
+		<li>
+		<a href="URL_DESTINO">Máquinas eléctricas</a>
+		<ul>
+			<li><a href="URL_DESTINO">Transformadores</a></li>
+			<li><a href="URL_DESTINO">Motores</a></li>
+		</ul>
+		</li>
+		<li>
+		<a href="URL_DESTINO">Circuitos electrónicos</a>
+		<ul>
+			<li><a href="URL_DESTINO">Analógicos</a></li>
+			<li><a href="ED.html">Digitales</a></li>
+		</ul>
+		</li>
+	</ul>
+</nav>		
+</div>
+
+<body>
+	
+<img src="imagenes/medidas/medidas.jpg" width="100%"/>
+
+
+<article>
+<div class="cuerpo">
+	<h1>Medida de tensión y frecuencia</h1>
+	<p align="center"><img src="imagenes/medidas/V.svg"> </p>
+	<p>Para medir tensión y frecuencia:</p>
+	<ol>
+		<li type="1">Gire la llave selectora rotativa a la posición <strong>V</strong>.</li>
+		<li type="1">Utilice para esta prueba todos los terminales (rojo, azul y verde). Puede utilizar conductores de prueba o el cable para la red eléctrica al medir tensión de CA.</li>
+		<ul>
+			<li type="disc">La pantalla principal (superior) muestra la tensión de CA. El comprobador lee tensión de CA hasta 500 V. Pulse <strong>F1</strong> para conmutar la lectura de tensión entre <strong>L-PE</strong>, <strong>L-N</strong> y <strong>N-PE</strong>.</li>
+			<li type="disc">La pantalla secundaria (inferior) muestra la frecuencia de la red eléctrica.</li>
+		</ul>
+	</ol>
+</div>
+</article>
+
+<div class="parrafo">
+<h1>Medida de resistencia de aislamiento</h1>
+<p>La medida de la resistencia de aislamiento de la instalación eléctrica tiene como finalidad comprobar la integridad de los conductores y sus aislantes. Su verificación ayuda a excluir la posibilidad de un cortocircuito o de una derivación a tierra que represente un peligro mortal (por descarga eléctrica), o para lo propia instalación (incendio de origen eléctrico).</p>
+<p>Según el <strong>REBT</strong> en su <strong>ITC BT 19 apartado 2.9</strong> - Medida de resistencia de aislamiento y rigidez dieléctrica - las instalaciones deberán presentar una resistencia de aislamiento al menos igual a los valores indicados en la tabla siguiente:</p>
+		
+<table>
+	<tbody align="center">
+	<tr>
+		<td class="BordeInferior"><strong>Tensión nominal de la instalación</strong></td>
+		<td class="BordeInferior BordeIzdo"><strong>Tensión de ensayo en Corriente Contínua (V)</strong></td>
+		<td class="BordeInferior BordeIzdo"><strong>Resistencia de aislamiento (M&Omega;)</strong></td>
+	</tr>
+	<tr>
+		<td>Muy Baja Tensión de Seguridad (MBTS)</td>
+		<td class="BordeIzdo">250</td>
+		<td class="BordeIzdo"><math display='inline'><mo>&ge;</mo><mn>0,25</mn></math></td>
+	</tr>
+	<tr>
+		<td class="BordeInferior BordeInferior">Muy Baja Tensión de Protección (MBTP)</td>
+		<td class="BordeIzdo BordeInferior">250</td>
+		<td class="BordeIzdo BordeInferior"><math display='inline'><mo>&ge;</mo><mn>0,25</mn></math></td>
+	</tr>
+	<tr>
+		<td class="BordeInferior BordeInferior">Inferior o igual a 500 V</td>
+		<td class="BordeIzdo BordeInferior">500</td>
+		<td class="BordeIzdo BordeInferior"><math display='inline'><mo>&ge;</mo><mn>0,5</mn></math></td>
+	</tr>
+	<tr>
+		<td class="BordeInferior">Superior a 500 V</td>
+		<td class="BordeIzdo BordeInferior">1000</td>
+		<td class="BordeIzdo BordeInferior"><math display='inline'><mo>&ge;</mo><mn>1,0</mn></math></td>
+	</tr>
+	</tbody>
+</table>
+		
+<p>Este aislamiento se entiende para una instalación en la cual la longitud del conjunto de canalizaciones y cualquiera que sea el número de conductores que las componen no exceda de 100 metros. Cuando esta longitud exceda del valor anteriormente citado y pueda fraccionarse la instalación en partes de aproximadamente 100 metros de longitud, bien por seccionamiento, desconexión, retirada de fusibles o apertura de interruptores, cada una de las partes en que la instalación ha sido fraccionada debe presentar la resistencia de aislamiento que corresponda según la tabla anterior.</p>
+<p>La medida se efectuará mediante un generador de corriente continua, capaz de suministrar las tensiones de ensayo especificadas en la tabla anterior con una corriente de 1 mA para una carga igual a la mínima resistencia de aislamiento especificada para cada tensión.
+<p>El aislamiento se medirá de dos formas distintas:</p>
+<ol>
+	<li type="disc">
+	<p><strong>Entre todos los conductores del circuito de alimentación (fases y neutro) unidos entre sí con respecto a tierra (aislamiento con relación a tierra).</strong></p>
+	<p>Los conductores, incluido el conductor neutro, estarán aislados de tierra, así como de la fuente de alimentación. Es importante recordar que estas medidas se efectúan por tanto en circuitos sin tensión, o mejor dicho desconectados de su fuente de alimentación habitual, ya que en caso contrario se podría averiar el comprobador. La tensión de prueba es la tensión continua generada por el propio megóhmetro.</p>
+	<p>La medida de aislamiento con relación a tierra, se efectuará uniendo a ésta el polo positivo del megóhmetro y dejando, en principio, todos los receptores conectados y sus mandos en posición “paro”, asegurándose que no existe falta de continuidad eléctrica en la parte de la instalación que se verifica; los dispositivos de interrupción intercalados en la parte de instalación que se verifica se pondrán en posición de "cerrado" y los cortacircuitos fusibles instalados como en servicio normal a fin de garantizar la continuidad eléctrica del aislamiento. Todos los conductores se conectarán entre sí incluyendo el conductor neutro o compensador, en el origen de la instalación que se verifica y a este punto se conectará el polo negativo del megóhmetro.</p>
+	</li>
+	<li type="disc">
+	<p><strong>Entre cada pareja de conductores activos.</strong></p>
+	<p>La segunda medida a realizar corresponde a la resistencia de aislamiento entre conductores polares, se efectúa después de haber desconectado todos los receptores, quedando los interruptores y cortacircuitos fusibles en la misma posición que la señalada anteriormente para la medida del aislamiento con relación a tierra. La medida de la resistencia de aislamiento se efectuará sucesivamente entre los conductores tomados dos a dos, comprendiendo el conductor neutro o compensador.</p>
+	</li>
+</ol>		
+</div>
+
+<div class="ejemplo">
+	<p align="center"><img src="imagenes/medidas/R_ISO.svg"></p>
+	<p>Para medir la resistencia del aislamiento:</p>
+	<ol>
+		<li type="1">Gire la llave selectora rotativa a la posición R<sub>ISO</sub> </li>
+		<li type="1">Utilice los terminales <strong>L</strong> y <strong>PE</strong> (rojo y verde) para esta prueba.</li>
+		<li type="1">Utilice el <strong>F4</strong> para seleccionar la tensión de la prueba. La mayoría de las pruebas del aislamiento se realizan a 500 V, pero respete los requisitos de prueba locales.</li>
+		<li type="1">Mantenga presionado hasta que la lectura se estabilice y el comprobador emita una señal.</li>
+	</ol>
+</div>
+
+<div class="parrafo">
+<h1>Medida de continuidad</h1>
+<p>La finalidad de la prueba es garantizar que no se han producido desperfectos o cortes en el cableado durante la instalación del mismo, ya sea sobre los conductores activos o en los conductores de protección.</p>
+<p>La ITC-BT-05 - Verificaciones e Inspecciones - en su apartado 6, clasificación de defectos, se considera como defecto grave la falta de continuidad de los conductores de protección.</p>
+		<p>El REBT no define, excepto para instalaciones en quirófanos y salas de intervención, ITC-BT-38, valores máximos concretos para la resistencia de los conductores de protección. En concreto la impedancia entre el embarrado común de puesta a tierra de cada quirófano o sala de intervención y las conexiones a masa, o los contactos de tierra de las bases de toma de corriente, no deberá exceder de 0,2 &Omega;. Además todas las partes metálicas accesibles han de estar unidas al embarrado de equipotencialidad mediante conductores de cobre aislados e independientes con una impedancia entre estas partes y el embarrado de equipotencialidad que no deberá exceder de 0,1 ohmios.</p>
+<p>En general, la discontinuidad de un cable supone valores de resistencia elevados (superiores a 1 M&Omega;) mientras que pequeños valores de resistencias (2 &Omega; ó 3 &Omega;) son indicativos de una buena continuidad.</p>
+<p>Esta medida se realiza con los circuitos bajo prueba libres de tensión. Se recomienda realizarlo con una fuente de tensión, de 4 V a 24 V en vacío, en corriente continua o alterna y que sea capaz de suministrar una corriente mínima de 200 mA, se suele utilizar un óhmetro, o un equipo multifunción que cumplan con estas características.</p>
+<p>La medida se realiza conectando una de las puntas de prueba a la barra o punto equipotencial general y la otra punta de prueba al conductor de protección de la base de enchufe bajo prueba. Este procedimiento se repite para cada una de las bases de enchufe o puntos de conexión del conductor de protección.</p>
+<p>Si bien comprobar la continuidad de un cable no instalado es una tarea sin ninguna dificultad por tener accesible ambos extremos del cable, en el caso del cable instalado los extremos de los conductores hace que necesariamente se tenga que recurrir al ensayo de los conductores unidos entre sí (de dos en dos) y determinar, por ejemplo, conjuntamente la continuidad del cable de neutro y fase en la misma medida. Teniendo en cuenta que la longitud de los cables y el material con que están construidos son similares, el valor de continuidad resultante será la mitad del valor medido sobre ambos. La medida puede efectuarse desde el cuadro eléctrico (cortocircuitando en las tomas de corriente) o desde las tomas de corriente (cortocircuitando en el cuadro eléctrico).</p>
+</div>
+
+<div class="ejemplo">
+	<p align="center"><img src="imagenes/medidas/R_LO.svg"></p>
+	<p>Para medir continuidad:</p>
+	<ol>
+		<li type="1">Gire la llave selectora rotativa a la posición R<sub>LO</sub>.</li>
+		<li type="1">Utilice los terminales <strong>L</strong> y <strong>PE</strong> (rojo y verde) para esta prueba.</li>
+		<li type="1">Antes de hacer una prueba de continuidad, use el adaptador de cero para poner en cero la resistencia de los conductores de prueba. Mantenga presionado <strong>ZERO</strong> hasta que aparezca el anunciador ZERO. El comprobador mide la resistencia de las sondas, almacena la lectura en la memoria y la sustrae de las lecturas. El valor de resistencia se almacena incluso al desconectar la energía, por lo que no necesita repetir la operación cada vez que utiliza el instrumento. Asegúrese de que las baterías tengan una buena condición de carga antes de poner a cero los conductores de la prueba.</li>
+		<li type="1"><p>Mantenga presionado <strong>TEST</strong> hasta que la lectura se estabilice. Si la señal acústica de continuidad está activada, el comprobador emite un pitido continuo para los valores medidos inferiores a 2 &Omega; y no se oye ningún pitido de lectura estable para los valores medidos superiores a 2 &Omega;.</p>
+		<p>Si un circuito tiene corriente, la prueba se inhibe y aparece la tensión de CA en la pantalla secundaria (inferior).</p></li>
+	</ol>
+</div>
+
+
+<div class="parrafo">
+<h1>Medida de la resistencia a tierra</h1>
+<h2>La resistividad de los terrenos</h2>
+<p>La resistividad (&phi;) de un terreno se expresa en ohmios-metro (&Omega;·m). Esto corresponde a la resistencia teórica en Ohmios de un cilindro de tierra de 1 m<sup>2</sup>  de sección y de 1 m de longitud. Su medida permite conocer la capacidad del terreno para conducir la corriente eléctrica. Por lo tanto, cuanto más débil sea la resistividad, más débil será la resistencia de la toma de tierra construida en este lugar.</p>
+<p>La resistividad es muy variable según las regiones y la naturaleza de los terrenos. Depende del índice de humedad y de la temperatura (las heladas o la sequía la aumentan). Por ello una resistencia de tierra puede variar según las estaciones y las condiciones de medida.</p>
+<p>Dado que la temperatura y la humedad son más estables al alejarse de la superficie de la tierra, cuanto más profundo esté el sistema de puesta a tierra menos sensible será el mismo a los cambios medioambientales.</p>
+<p><strong>Por lo tanto se recomienda realizar la toma de tierra lo más profundo posible.</strong></p>
+	
+<h2>La medida de resistencia de una toma de tierra existente</h2>
+	
+<p>Es importante recordar que la medida de tierra de referencia es la medida de tierra con 2 picas. Se hace referencia a esta medida en todas las normas de control de una instalación eléctrica que permite realizar una medida precisa y segura de la resistencia de tierra.</p>
+<p>El principio de medida consiste en hacer circular con un generador apropiado <strong>G</strong>, una corriente alterna <strong><em>I</em></strong> constante a través de la toma auxiliar <strong>H</strong> llamada <em><strong>toma de inyección de corriente</strong></em>. Realizándose el retorno por la toma de tierra.</p>
+<p>Se mide la tensión <strong>V</strong> entre las tomas <strong>E</strong> y el punto del terreno donde el potencial es nulo mediante otra toma auxiliar <strong>S</strong> llamada <em><strong>toma de potencial 0 V</strong></em>. El cociente entre la tensión así medida y la corriente constante inyectada <em><strong>I</strong></em> da la resistencia buscada.</p>
+	
+<p align="center"><img src="imagenes/medidas/RTierra01.svg"></p>
+	
+<p align="center">$R_E = \frac{U_{ES}}{I}$</p>
+
+	
+<h2>Medida de tierra de 3 polos llamada método del 62 %</h2>
+	
+<p>Este método requiere el uso de dos electrodos auxiliares para permitir la inyección de corriente y la referencia de potencial 0 V. La posición de dos electrodos auxiliares, con respecto a la toma de tierra a medir E(X), es determinante.</p>
+<p>Para realizar una medida correcta, la “toma auxiliar” de referencia de potencial (S) no tiene que estar clavada en las zonas de influencia de las tierras E y H, creadas por la circulación de la corriente <strong><em>I</em></strong>.</p>
+<p>Estadísticas de campo han demostrado que el método ideal para garantizar la mayor precisión de medida consiste en colocar la pica S a 62 % de E en la recta EH.</p>
+<p>Conviene luego asegurarse de que la medida no varía o poco moviendo la pica S a ±10 % (S’ y S”) a cada lado de su posición inicial en la recta EH.</p>
+<p>Si la medida varía, significa que (S) se encuentra en la zona de influencia. Se debe por lo tanto aumentar las distancias y volver a realizar las medidas.</p>
+	
+<p align="center"><img src="imagenes/medidas/RTierra02.svg"></p>
+	
+<h2>El método de medida en triángulo (dos picas)</h2>
+	
+<p>Este método requiere el uso de dos electrodos auxiliares. Este método se utiliza cuando no se puede aplica el método del 62% por no conseguir una alineación o un obstáculo impide un alejamiento suficiente de H.</p>
+	<p>Consiste en:</p>
+	<ol>
+		<li>clavar las picas S y H al igual que la toma de tierra E, formando las picas S y H un triángulo equilátero,</li>
+		<li>efectuar una primera medida colocando S por un lado, luego una segunda medida colocando S por el otro lado.</li>
+	</ol>
+	<p>Si los valores obtenidos son muy diferentes, la pica S se encuentra en una zona de influencia. Se debe por lo tanto aumentar las distancias y volver a realizar las medidas.</p>
+	<p>Si los valores obtenidos son próximos puede considerarse que la medida es correcta pero, para asegurarse de ello, vuelva a realizar las medidas aumentando las distancias, pues este método proporciona resultados inciertos.</p>
+		<p align="center"><img src="imagenes/medidas/RTierra03.svg"></p>
+</div>
+
+
+		<div class="ejemplo">
+			<p align="center"><img src="imagenes/medidas/RTierra04.svg"></p>
+			<p>Para medir la resistencia de tierra:</p>
+			<ol>
+				<li>Gire la llave selectora rotativa a la posición <strong>R<sub>E</sub></strong>.</li>
+				<li>Pulse y suelte <strong>TEST</strong>. Espere que finalice la prueba.</li>
+				<ul>
+					<li type="disc">La pantalla principal (superior) muestra la lectura de resistencia de tierra.</li>
+					<li type="disc">La tensión detectada entre las estacas de prueba aparecerá en la pantalla secundaria. Si hay más de 10 V, la prueba se inhibe.</li>
+					<li type="disc">Si la medición es demasiado ruidosa, aparecerá el error 5. (La exactitud del valor medido está disminuida por el ruido). Presione la flecha hacia abajo para mostrar el valor medido. Presione la flecha hacia arriba para volver a la pantalla del error 5.</li>
+					<li type="disc">Si la resistencia de la sonda es demasiado alta, aparecerá el error 6. La resistencia de la sonda puede reducirse introduciendo las estacas de prueba más profundamente en la tierra o humedeciendo la tierra a su alrededor.</li>
+				</ul>
+			</ol>
+			<p align="center"><img src="imagenes/medidas/RTierra05.svg"></p>
+		</div>
+		
+
+
+
+
+
+
+<div class="parrafo">
+	<h1>Comprobación de los interruptores diferenciales</h1>
+	<p>En la ITC-BT-24 ,apartado 4.1.2 se dice que en las instalaciones con esquema TT, se utilizarán los dispositivos de protección siguientes:</p>
+	<ul>
+		<li type="disc">Dispositivos de protección de corriente diferencial-residual.</li>
+		<li type="disc">Dispositivos de protección de máxima corriente, tales como fusibles, interruptores automáticos. Estos dispositivos solamente son aplicables cuando la resistencia R<sub>A</sub> tiene un valor muy bajo.</li>
+	</ul>
+	<p>Estos dispositivos cumplirán la siguiente condición:</p>
+	<p align="center"> R<sub>A</sub> &times; I<sub>A</sub> &le; U </p>
+	
+	<p>donde:</p>
+	<ul>
+		<li type="disc"><strong>R<sub>A</sub></strong> es la suma de las resistencias de la toma de tierra y de los conductores de protección de masas.</li>
+		<li type="disc"><strong>I<sub>A</sub></strong> es la corriente que asegura el funcionamiento automático del dispositivo de protección. Cuando el dispositivo de protección es un dispositivo de corriente diferencial-residual es la corriente diferencial-residual asignada.</li>
+		<li type="disc"><strong>U</strong> es la tensión de contacto límite convencional (50, 24V u otras, según los casos).</li>
+	</ul>
+
+	<p>En la práctica, los dispositivos de protección contra sobreintensidades no son de aplicación para la protección contra los contactos indirectos, ya que para alcanzar, sin riesgo para las personas, una intensidad suficiente para provocar la desconexión del circuito con defecto, debería garantizarse, de forma fiable y permanente durante toda la vida de la instalación, una resistencia de puesta a tierra extremadamente pequeña que es muy difícil de conseguir.</p>
+	<p>En una instalación industrial en la que se utilizan Interruptores Automáticos según UNE-EN 60898, la corriente de disparo según la característica térmica correspondiente a 5 segundos es del orden de 5 &times; I<sub>n</sup>.</p>
+	<p>Si por ejemplo el calibre del interruptor automático fuera de 25 A, se tendría:</p>
+	
+	<p>I<sub>a</sub> = 5 &times; 25 = 125 A</p>
+	
+	<p>Aplicando la condición más restrictiva para esquemas TT y suponiendo una tensión de contacto máxima de 24 V, correspondiente a locales húmedos:</p>
+
+
+<p align="center">$R_A · I_a \le U \Rightarrow  R_A \le \displaystyle\frac{U}{I_a} = \frac{24}{125} \approx 0,2\ \Omega$
+</p>
+	
+			
+
+	<p>Que debería garantizarse a lo largo de toda la vida útil de la instalación para todas las masas de la misma.</p>
+	
+	<p>Según la guía técnica de aplicación del REBT, anexo 4, verificación de instalaciones eléctricas, la comprobación de diferenciales requiere de un aparato capaz de inyectar a través del diferencial bajo prueba una corriente de fugas especificada y conocida que según su valor deberá hacer disparar al diferencial. Para hacer la prueba el comprobador se conecta en cualquier base de enchufe aguas abajo del diferencial en ensayo, estando la instalación en servicio. Además cuando dispare el diferencial el comprobador debe ser capaz de medir el tiempo que tardó en disparar desde el instante en que se inyectó la intensidad de fugas.</p>
+	<p>Normalmente estos equipos inyectan una corriente senoidal, pero para comprobar algunos diferenciales especiales a veces es necesario también que sean capaces de inyectar corriente alterna rectificada de media onda o una corriente continua.</p>
+	<p>Las pruebas habituales para comprobar el funcionamiento de un diferencial del tipo general son las siguientes:</p>
+	<ul>
+		<li type="disc">Se inyecta una intensidad mitad de la intensidad diferencial residual asignada, con un ángulo de fase de corriente respecto de la onda de tensión de 0&deg;, y el diferencial no debe disparar.</li>
+		<li type="disc">Se repite la prueba anterior con un ángulo de fase de 180&deg; y el diferencial no debe disparar.</li>
+		<li type="disc">Se inyecta una intensidad igual la intensidad diferencial residual asignada, con un ángulo de fase de corriente respecto de la onda de tensión de 0&deg;, y el diferencial debe disparar en menos de 200 ms.</li>
+		<li type="disc">Se repite la prueba anterior con un ángulo de fase de 180&deg; y el diferencial debe disparar en menos de 200 ms.</li>
+		<li type="disc">Se inyecta una intensidad igual al doble de la intensidad diferencial residual asignada, con un ángulo de fase de corriente respecto de la onda de tensión de 0&deg;, y el diferencial debe disparar en menos de 150 ms.</li>
+		<li type="disc">Se repite la prueba anterior con un ángulo de fase de 180&deg; y el diferencial debe disparar en menos de 150 ms.</li>
+		<li type="disc">Se inyecta una intensidad igual a cinco veces la intensidad diferencial residual asignada, con un ángulo de fase de corriente respecto de la onda de tensión de 0&deg;, y el diferencial debe disparar en menos de 40 ms.</li>
+		<li type="disc">Se repite la prueba anterior con un ángulo de fase de 180&deg; y el diferencial debe disparar en menos de 40 ms.</li>
+	</ul>
+	<p>Para los diferenciales selectivos del tipo S las pruebas tienen otros límites de aceptación.</p>
+</div>
+
+
+<div class="ejemplo">
+	<p align="center"><img src="imagenes/medidas/Tiempo_Disparo_Diferencia.svg"></p>
+	<p><strong>Para medir el tiempo de disparo de los interruptores por corriente diferencial utilizando el modo automático:</strong></p>
+	<ol>
+		<li>Enchufe el comprobador en el tomacorriente.</li>
+		<li>Gire la llave selectora rotativa a la posición &Delta;TT.</li>
+		<li>Pulse <strong>F1</strong> para seleccionar la capacidad nominal de corriente de los interruptores por corriente diferencial (10, 30 o 100 mA).</li>
+		<li>Pulse <strong>F2</strong> para seleccionar el modo automático.</li>
+		<li>Pulse <strong>F3</strong> para seleccionar la forma de onda de la corriente de la prueba del interruptor por corriente diferencial.</li>
+		<li>Pulse y libere <strong>TEST</strong>.</li>
+		<p>El comprobador suministra la mitad de la corriente nominal del interruptor por corriente diferencial (usando el multiplicador &times;&frac12;) durante 310 ó 510 ms (2 segundos en el Reino Unido). Si el interruptor por corriente diferencial se dispara, la prueba finaliza. Si el interruptor no se dispara, el comprobador invierte la fase y repite la prueba. La prueba termina si el interruptor se dispara.</p>
+		<p>Si el interruptor no se dispara, el comprobador restablece la configuración de fase inicial y suministra una corriente igual a la corriente nominal del interruptor por corriente diferencial (usando el multiplicador &times;1). El interruptor debe dispararse, y los resultados de la prueba aparecen en la pantalla principal.</p>
+		<li>Restablezca el interruptor por corriente diferencial.</li>
+		<li>El comprobador invierte las fases y repite la prueba 1&times;. El interruptor se debe disparar y los resultados de la prueba aparecen en la pantalla principal.</li>
+		<li>Restablezca el interruptor por corriente diferencial.</li>
+		<li>El comprobador restablece la configuración de fase inicial y suministra 5 veces el valor de la corriente nominal del interruptor por corriente diferencial (usando el multiplicador &times;5) durante 50 ms. El interruptor debe dispararse y los resultados de la prueba aparecen en la pantalla principal.</li>
+		<li>Restablezca el interruptor por corriente diferencial.</li>
+		<li>El comprobador invierte la fase y repite la prueba 5&times;.El interruptor se debe disparar y los resultados de la prueba aparecen en la pantalla principal.</li>
+		<li>Restablezca el interruptor por corriente diferencial.</li>
+		<ul>
+			<li type="disc">Puede usar las teclas de flecha   para revisar los resultados de la prueba. El primer resultado mostrado es la última medición tomada, la prueba de 5 veces la corriente. Pulse la tecla de flecha hacia abajo   para volver a la primera prueba a la mitad de la corriente nominal.</li>
+			<li type="disc">Si el tiempo de disparo está de acuerdo con el estándar adecuado del RCD, se muestra el indicador del RCD  . Para obtener más información, vea la Tabla de tiempos de disparo máximos.</li>
+		</ul>
+		<li>Los resultados de la prueba están en la memoria temporal. Si desea almacenar los resultados de la prueba, pulse <strong>MEMORY</strong> y continúe como se describe en “Almacenamiento y recuperación de mediciones”. El archivo y la recuperación de la medición sólo está disponible en los modelos 1653B y 1654B.</li>
+	</ol>
+</div>
+
+
+
+
+
+
+
+<div class="parrafo">
+	<h1>Comprobación de orden de fases</h1>
+	<p>Esta comprobación se efectúa mediante un equipo específico o utilizando un comprobador multifunción de baja tensión que tenga esta capacidad. Esta medida es necesaria por ejemplo si se van a conectar motores trifásicos, de forma que se asegure que la secuencia de fases es directa antes de conectar el motor.</p>
+</div>
+
+<article class="ejemplo">
+
+	<p align="center"><img src="imagenes/medidas/OrdenFases01.svg"></p>
+	<p align="center"><img src="imagenes/medidas/OrdenFases02.svg"></p>
+	<p>Para realizar una prueba de secuencia de fases:</p>
+	<ol>
+		<li>Gire la llave selectora rotativa a la posición que indica la figura.</li>
+		<li>La pantalla principal (superior) muestra:</li>
+		<ul>
+			<li type="disc">123 para la secuencia de fases correcta.</li>
+			<li type="disc">321 para la secuencia de fases invertida.</li>
+			<li type="disc">Guiones (---) en vez de números si se detecta una tensión insuficiente.</li>
+		</ul>
+	</ol>
+
+
+</article>
+</body>
+</html>
+
+
+
