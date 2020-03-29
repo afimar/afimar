@@ -47,7 +47,7 @@ header label:hover {
 	text-decoration: none;
 }
 
-@media only screen and (max-width: 50em) {
+@media only screen and (max-width: 100em) {
 	
 	header label {
 		display: block;
