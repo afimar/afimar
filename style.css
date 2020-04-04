@@ -1,87 +1,178 @@
-body {
-	margin: 0;
-	font-family: sans-serif;
-}
-
-header{
+nav {
+	position: relative;
 	width: 100%;
-	background: #4E94AB;
-}
-
-#btn-menu{
-	display: none;
-}
-
-header label {
-	display: none;
-	width: 40px;
-	height: 30px;
-	padding: 10px;
-	border-right: 1px solid #fff;
-}
-
-header label:hover {
-	cursor: pointer;
-	background: rgba(0,0,0,0.3);
-}
-
-.menu ul {
-	margin: 0;
-	list-style: none;
+	margin: 0 auto;
 	padding: 0;
-	display: flex;
+	font-family: sans-serif;
+	}
+
+ul {
+  list-style-type: none; 		/*Elimina el estilo de lista con puntos*/
+  margin: 0;					/*Espacio alrededor de los elementos*/
+  padding: 0;					/*Anchura de relleno de los elementos*/
+  width: 100%;					/*Ancho del área de contenido del elemento*/
+  overflow: hidden;				/*La propiedad de overflow especifica si se debe recortar el contenido o agregar barras
+  	 							de desplazamiento cuando el contenido de un elemento es demasiado grande para caber en el
+  								área especificada. La propiedad de desbordamiento tiene los siguientes valores:
+  								-	Visible: predeterminado. El desbordamiento no está recortado. El contenido se representa
+  									fuera del cuadro del elemento.
+								-	Hidden: el overflow se recorta y el resto del contenido será invisible
+								-	Scroll: el desbordamiento se recorta y se agrega una barra de desplazamiento para ver
+  									el resto del contenido
+  								-	Auto: similar al desplazamiento, pero agrega barras de desplazamiento solo cuando es necesario.
+  								*/
+  background-color: #ffffff;			/*Color de fondo del menu*/
+  border-bottom: 1px solid #D3D3D3;		/*Borde exterior del menu*/
 }
 
-.menu li {
-	border-right: 1px solid #fff;
-}
-
-.menu li:hover {
-	background: rgba(0,0,0,0.3);
-}
-
-.menu li {
-	display: block;
-	padding: 15pt 20pt;
-	color: #fff;
-	text-decoration: none;
-}
-
-@media only screen and (max-width: 100em) {
-	
-	header label {
-		display: block;
-	}
-	
-	.menu {
-		position: absolute;
-		background: #4E94AB;
-		width: 70%;
-		margin-left: -70%;
-	}
-	
-	.menu ul {
-		flex-direction: column;
-	}
-	
-	.menu li {
-		border-top: 1px solid #fff;
-	}
-	
-	#btn-menu:checked ~ .menu {
-		margin: 0;
-		
-	}
+ul.fullnav li {
+  float: left;
 }
 
 
+ul.fullnav li a {
+  display: block;			/*Block que hace que se pueda hacer clic en toda el área del enlace y nos 
+  							permite especificar el ancho (y el relleno, el margen, la altura, etc. si lo desea)*/
+  color: #808080;			/*Color del texto del menú*/
+  font-family: sans-serif;
+  font-size: 80%;
+  padding: 18px 18px;		/*Ancho del elemento superior 16px
+  							Ancho del elemento inferior 8px*/
+  text-decoration: none;	/*Elimina la decoración link*/
+}
+
+ul.fullnav li a:hover {
+	color: #000000;
+}
+
+ul.fullnav .active {
+	border-bottom: 2px solid #008000;
+	color: #000000;
+}
 
 
+ul.fullnav li {
+  text-align: center;
+/*  border-right: 1px solid #555;	Borde inferior del los menús.
+  									El borde inferior aparece doble porque se superpone al borde
+  									exterior del menú*/
+}
+
+ul.fullnav li:last-child {
+  border-right: none;		/*Elimina el borde inferior del último elemento del menú*/
+}
+
+	
+.parrafo{
+	margin: 0 auto;
+	font-family: sans-serif;
+	color: rgb(96,96,96);
+	width: 80%;
+	position: relative;
+	font-size: 1.25em;
+	font-weight: lighter;
+	line-height: 1.5em;
+}
+.cuerpo{
+	margin: 0 auto;
+	font-family: sans-serif;
+	color: rgb(96,96,96);
+	width: 80%;
+	position: relative;
+	font-size: 1em;
+	font-weight: lighter;
+	line-height: 1.5em;
+}
+.ejemplo{
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	font-family: sans-serif;
+	color: rgb(96,96,96);
+
+	position: relative;
+	font-size: 1.25em;
+	font-weight: lighter;
+	
+	background-color: rgb(225,225,225);
+	
+	padding-top: 2%;
+    padding-right: 5%;
+    padding-bottom: 2%;
+    padding-left: 5%;
+	
+	border-left-style: solid;
+	border-left-color: red;
+	border-left-width: thick;
+}
+
+.ejemploold{
+	margin: 0 auto;
+	font-family: sans-serif;
+	color: rgb(96,96,96);
+	width: 80%;
+	position: relative;
+	font-size: 1.25em;
+	font-weight: lighter;
+	line-height: 1.5em;
+	background-color: rgb(225,225,225);
+	padding-top: 2%;
+    padding-right: 10%;
+    padding-bottom: 2%;
+    padding-left: 10%;
+	border-left-style: solid;
+	border-left-width: 100%;
+	border-left-color: red;
+}
 
 
-
-
-
-
-
-
+.pieDePagina{
+	margin: 0 auto;
+	font-family: sans-serif;
+	color: rgb(96,96,96);
+	width: 80%;
+	position: relative;
+	font-size: 1em;
+	font-weight: lighter;
+	line-height: 1.5em;
+	background-color: rgb(225,225,225);
+	padding-top: 1%;
+    padding-right: 10%;
+    padding-bottom: 1%;
+    padding-left: 10%;
+}
+table{
+    border-collapse: collapse;
+}
+table td {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.BordeInferior {
+    border-bottom: 3px solid rgb(96,96,96);
+  }
+.BordeIzdo {
+	border-left: 3px solid rgb(96,96,96);
+}
+.BordeSuperiorPuntos {
+	border-top: 1px dotted rgb(96,96,96);
+}
+tfoot td{
+	border-top: 3px solid rgb(96,96,96);
+}
+h1{
+	font-size: 2em;
+	font-weight: normal;
+	line-height: 1.25em;
+}
+h2{
+	font-size: 1.5em;
+	font-weight: lighter;
+	line-height: 1.25em;
+}
+h3{
+	font-size: 1.25em;
+	font-weight: lighter;
+	line-height: 1.25em;
+}
