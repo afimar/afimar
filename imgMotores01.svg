@@ -1,0 +1,95 @@
+<svg version="1.1"
+	baseProfile="full"
+	width="1000" height="330"
+	xmlns="http://www.w3.org/2000/svg">
+	<!--Puentes Verticales-->
+<!--
+	<g id="PuenteVertical">
+	<rect x="70" y="65" width="60" height="200" fill="gray" stroke="black" stroke-width="1" rx="30" ry="30"/>
+	</g>
+	<use xlink:href="#PuenteVertical" x="140" y="0"></use>
+	<use xlink:href="#PuenteVertical" x="280" y="0"></use>
+-->
+	<path id="bobinaPlacaR" d="m100 95 l 0 50 a 12.5 12.5 0 1 1 0 25 a 12.5 12.5 0 1 1 0 25 a 12.5 12.5 0 1 1 0 25
+		a 12.5 12.5 0 1 1 0 25 l 0 50" fill = "none" stroke = "none" stroke-width = "2" 
+		transform = "rotate (-45 100 95)">
+			<set attributeName = "stroke" to = "black" begin="U1.mouseover" end="U1.mouseout"/>
+			<set attributeName = "stroke" to = "black" begin="U2.mouseover" end="U2.mouseout"/>
+	</path>	
+	<path id="bobinaPlacaS" d="m240 95 l 0 50 a 12.5 12.5 0 1 1 0 25 a 12.5 12.5 0 1 1 0 25 a 12.5 12.5 0 1 1 0 25
+		a 12.5 12.5 0 1 1 0 25 l 0 50" fill = "none" stroke = "none" stroke-width = "2" 
+		transform = "rotate (-45 240 95)">
+			<set attributeName = "stroke" to = "darkgray" begin="V1.mouseover" end="V1.mouseout"/>
+			<set attributeName = "stroke" to = "darkgray" begin="V2.mouseover" end="V2.mouseout"/>
+	</path>
+	<path id="bobinaPlacaT" d="m100 235 l 0 106 a 12.5 12.5 0 1 1 0 25 a 12.5 12.5 0 1 1 0 25 a 12.5 12.5 0 1 1 0 25
+		a 12.5 12.5 0 1 1 0 25 l 0 107" fill = "none" stroke = "none" stroke-width = "2" 
+		transform = "rotate (-116.56 100 235)">
+			<set attributeName = "stroke" to = "brown" begin="W1.mouseover" end="W1.mouseout"/>
+			<set attributeName = "stroke" to = "brown" begin="W2.mouseover" end="W2.mouseout"/>
+	</path>
+	<!--Placa exterior-->
+	<rect x="30" y="30" width="420" height="270" fill="none" stroke="black" stroke-width="2" rx="20" ry="20"/>
+	<!--Tornillos-->
+	<g id="U1">
+		<circle cx="100" cy="95" r="20" stroke="black" stroke-width="1" fill="lightgray" />
+		<path d="m80 93 l 40 0" stroke="black" stroke-width="1" transform=" rotate (-45 100 95)"/>
+		<path d="m80 97 l 40 0" stroke="black" stroke-width="1" transform=" rotate (-45 100 95)"/>
+	</g>
+	<g id="V1">
+		<circle cx="240" cy="95" r="20" stroke="black" stroke-width="1" fill="lightgray" />
+		<path d="m220 93 l 40 0" stroke="black" stroke-width="1" transform=" rotate (-45 240 95)"/>
+		<path d="m220 97 l 40 0" stroke="black" stroke-width="1" transform=" rotate (-45 240 95)"/>
+	</g>
+	<g id="W1">
+		<circle cx="380" cy="95" r="20" stroke="black" stroke-width="1" fill="lightgray" />
+		<path d="m360 93 l 40 0" stroke="black" stroke-width="1" transform=" rotate (-45 380 95)"/>
+		<path d="m360 97 l 40 0" stroke="black" stroke-width="1" transform=" rotate (-45 380 95)"/>
+	</g>
+	<g id="W2">
+		<circle cx="100" cy="235" r="20" stroke="black" stroke-width="1" fill="lightgray" />
+		<path d="m80 233 l 40 0" stroke="black" stroke-width="1" transform=" rotate (-45 100 235)"/>
+		<path d="m80 237 l 40 0" stroke="black" stroke-width="1" transform=" rotate (-45 100 235)"/>
+	</g>
+	<g id="U2">
+		<circle cx="240" cy="235" r="20" stroke="black" stroke-width="1" fill="lightgray" />
+		<path d="m220 233 l 40 0" stroke="black" stroke-width="1" transform=" rotate (-45 240 235)"/>
+		<path d="m220 237 l 40 0" stroke="black" stroke-width="1" transform=" rotate (-45 240 235)"/>
+	</g>
+	<g id="V2">
+		<circle cx="380" cy="235" r="20" stroke="black" stroke-width="1" fill="lightgray" />
+		<path d="m360 233 l 40 0" stroke="black" stroke-width="1" transform=" rotate (-45 380 235)"/>
+		<path d="m360 237 l 40 0" stroke="black" stroke-width="1" transform=" rotate (-45 380 235)"/>
+	</g>
+	<text x="70" y="95" style="text-anchor:end" font-family="sans-serif" dominant-baseline = "middle">U1</text>
+	<text x="210" y="95" style="text-anchor:end" font-family="sans-serif" dominant-baseline = "middle">V1</text>
+	<text x="350" y="95" style="text-anchor:end" font-family="sans-serif" dominant-baseline = "middle">W1</text>
+	<text x="70" y="235" style="text-anchor:end" font-family="sans-serif" dominant-baseline = "middle">W2</text>
+	<text x="210" y="235" style="text-anchor:end" font-family="sans-serif" dominant-baseline = "middle">U2</text>
+	<text x="350" y="235" style="text-anchor:end" font-family="sans-serif" dominant-baseline = "middle">V2</text>
+	<path id="bobinaR" d="m650 65 l 0 50 a 12.5 12.5 0 1 1 0 25 a 12.5 12.5 0 1 1 0 25 a 12.5 12.5 0 1 1 0 25
+		a 12.5 12.5 0 1 1 0 25 l 0 50" fill = "none" stroke = "black" stroke-width = "1">
+		<set attributeName = "stroke-width" to = "2" begin="U1.mouseover" end="U1.mouseout"/>
+		<set attributeName = "stroke-width" to = "2" begin="U2.mouseover" end="U2.mouseout"/>
+	</path>
+	<path id="bobinaS" d="m750 65 l 0 50 a 12.5 12.5 0 1 1 0 25 a 12.5 12.5 0 1 1 0 25 a 12.5 12.5 0 1 1 0 25
+		a 12.5 12.5 0 1 1 0 25 l 0 50" fill = "none" stroke = "black" stroke-width = "1">
+		<set attributeName = "stroke" to = "darkgray" begin="V1.mouseover" end="V1.mouseout"/>
+		<set attributeName = "stroke-width" to = "2" begin="V1.mouseover" end="V1.mouseout"/>
+		<set attributeName = "stroke" to = "darkgray" begin="V2.mouseover" end="V2.mouseout"/>
+		<set attributeName = "stroke-width" to = "2" begin="V2.mouseover" end="V2.mouseout"/>
+	</path>
+	<path id="bobinaT" d="m850 65 l 0 50 a 12.5 12.5 0 1 1 0 25 a 12.5 12.5 0 1 1 0 25 a 12.5 12.5 0 1 1 0 25
+		a 12.5 12.5 0 1 1 0 25 l 0 50" fill = "none" stroke = "black" stroke-width = "1">
+		<set attributeName = "stroke" to = "brown" begin="W1.mouseover" end="W1.mouseout"/>
+		<set attributeName = "stroke-width" to = "2" begin="W1.mouseover" end="W1.mouseout"/>
+		<set attributeName = "stroke" to = "brown" begin="W2.mouseover" end="W2.mouseout"/>
+		<set attributeName = "stroke-width" to = "2" begin="W2.mouseover" end="W2.mouseout"/>
+	</path>
+	<text x="649" y="65" style="text-anchor:end" font-family="sans-serif" dominant-baseline = "hanging">U1</text>
+	<text x="749" y="65" style="text-anchor:end" font-family="sans-serif" dominant-baseline = "hanging">V1</text>
+	<text x="849" y="65" style="text-anchor:end" font-family="sans-serif" dominant-baseline = "hanging">W1</text>
+	<text x="649" y="265" style="text-anchor:end" font-family="sans-serif" dominant-baseline = "baseline">U2</text>
+	<text x="749" y="265" style="text-anchor:end" font-family="sans-serif" dominant-baseline = "baseline">V2</text>
+	<text x="849" y="265" style="text-anchor:end" font-family="sans-serif" dominant-baseline = "baseline">W2</text>
+</svg>
