@@ -1,0 +1,49 @@
+<svg version="1.1"
+	baseProfile="full"
+	width="1000" height="480"
+	xmlns="http://www.w3.org/2000/svg">
+	<image href="imgMotores00.jpg" width="700"  x="10" y="10"></image>
+	<circle id="1" cx="520" cy="393" r="20" stroke="none" fill-opacity="0%" fill="red" />
+	<circle id="2" cx="108" cy="374" r="20" stroke="none" fill-opacity="0%" fill="red" />
+	<circle id="3" cx="364" cy="88" r="20" stroke="none" fill-opacity="0%" fill="red" />
+	<circle id="4" cx="122" cy="161" r="20" stroke="none" fill-opacity="0%" fill="red" />
+	<circle id="5a" cx="590" cy="129" r="20" stroke="none" fill-opacity="0%" fill="red" />
+	<circle id="5b" cx="187" cy="422" r="20" stroke="none" fill-opacity="0%" fill="red" />
+	<circle id="6" cx="215" cy="53" r="20" stroke="none" fill-opacity="0%" fill="red" />
+	<circle id="7" cx="422" cy="443" r="20" stroke="none" fill-opacity="0%" fill="red" />
+	<circle id="8" cx="612" cy="245" r="20" stroke="none" fill-opacity="0%" fill="red" />
+	<rect x="680" y="110" width="280" height="270" fill="none" stroke="darkgray" stroke-width="4" rx="20" ry="20"/>
+	<text x="700" y="150" font-family="sans-serif" font-size="18pt" fill="lightgray">
+		1. Estátor
+		<set attributeName = "fill" to = "red" begin="1.mouseover" end="1.mouseout"/>
+	</text>
+	<text x="700" y="180" font-family="sans-serif" font-size="18pt" fill="lightgray">
+		2. Rotor
+		<set attributeName = "fill" to = "red" begin="2.mouseover" end="2.mouseout"/>
+	</text>
+	<text x="700" y="210" font-family="sans-serif" font-size="18pt" fill="lightgray">
+		3. Carcasa
+		<set attributeName = "fill" to = "red" begin="3.mouseover" end="3.mouseout"/>
+	</text>
+	<text x="700" y="240" font-family="sans-serif" font-size="18pt" fill="lightgray">
+		4. Tapas
+		<set attributeName = "fill" to = "red" begin="4.mouseover" end="4.mouseout"/>
+	</text>
+	<text x="700" y="270" font-family="sans-serif" font-size="18pt" fill="lightgray">
+		5. Rodamientos
+		<set attributeName = "fill" to = "red" begin="5a.mouseover" end="5a.mouseout"/>
+		<set attributeName = "fill" to = "red" begin="5b.mouseover" end="5b.mouseout"/>
+	</text>
+	<text x="700" y="300" font-family="sans-serif" font-size="18pt" fill="lightgray">
+		6. Caja de conexiones
+		<set attributeName = "fill" to = "red" begin="6.mouseover" end="6.mouseout"/>
+	</text>
+	<text x="700" y="330" font-family="sans-serif" font-size="18pt" fill="lightgray">
+		7. Base soporte
+		<set attributeName = "fill" to = "red" begin="7.mouseover" end="7.mouseout"/>
+	</text>
+	<text x="700" y="360" font-family="sans-serif" font-size="18pt" fill="lightgray">
+		8. Ventilador
+		<set attributeName = "fill" to = "red" begin="8.mouseover" end="8.mouseout"/>
+	</text>
+</svg>

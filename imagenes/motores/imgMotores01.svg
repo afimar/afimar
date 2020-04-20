@@ -1,6 +1,6 @@
 <svg version="1.1"
 	baseProfile="full"
-	width="1000" height="330"
+	width="875" height="330"
 	xmlns="http://www.w3.org/2000/svg">
 	<!--Puentes Verticales-->
 <!--
@@ -69,22 +69,22 @@
 	<text x="350" y="235" style="text-anchor:end" font-family="sans-serif" dominant-baseline = "middle">V2</text>
 	<path id="bobinaR" d="m650 65 l 0 50 a 12.5 12.5 0 1 1 0 25 a 12.5 12.5 0 1 1 0 25 a 12.5 12.5 0 1 1 0 25
 		a 12.5 12.5 0 1 1 0 25 l 0 50" fill = "none" stroke = "black" stroke-width = "1">
-		<set attributeName = "stroke-width" to = "2" begin="U1.mouseover" end="U1.mouseout"/>
-		<set attributeName = "stroke-width" to = "2" begin="U2.mouseover" end="U2.mouseout"/>
+		<set attributeName = "stroke-width" to = "3" begin="U1.mouseover" end="U1.mouseout"/>
+		<set attributeName = "stroke-width" to = "3" begin="U2.mouseover" end="U2.mouseout"/>
 	</path>
 	<path id="bobinaS" d="m750 65 l 0 50 a 12.5 12.5 0 1 1 0 25 a 12.5 12.5 0 1 1 0 25 a 12.5 12.5 0 1 1 0 25
 		a 12.5 12.5 0 1 1 0 25 l 0 50" fill = "none" stroke = "black" stroke-width = "1">
 		<set attributeName = "stroke" to = "darkgray" begin="V1.mouseover" end="V1.mouseout"/>
-		<set attributeName = "stroke-width" to = "2" begin="V1.mouseover" end="V1.mouseout"/>
+		<set attributeName = "stroke-width" to = "3" begin="V1.mouseover" end="V1.mouseout"/>
 		<set attributeName = "stroke" to = "darkgray" begin="V2.mouseover" end="V2.mouseout"/>
-		<set attributeName = "stroke-width" to = "2" begin="V2.mouseover" end="V2.mouseout"/>
+		<set attributeName = "stroke-width" to = "3" begin="V2.mouseover" end="V2.mouseout"/>
 	</path>
 	<path id="bobinaT" d="m850 65 l 0 50 a 12.5 12.5 0 1 1 0 25 a 12.5 12.5 0 1 1 0 25 a 12.5 12.5 0 1 1 0 25
 		a 12.5 12.5 0 1 1 0 25 l 0 50" fill = "none" stroke = "black" stroke-width = "1">
 		<set attributeName = "stroke" to = "brown" begin="W1.mouseover" end="W1.mouseout"/>
-		<set attributeName = "stroke-width" to = "2" begin="W1.mouseover" end="W1.mouseout"/>
+		<set attributeName = "stroke-width" to = "3" begin="W1.mouseover" end="W1.mouseout"/>
 		<set attributeName = "stroke" to = "brown" begin="W2.mouseover" end="W2.mouseout"/>
-		<set attributeName = "stroke-width" to = "2" begin="W2.mouseover" end="W2.mouseout"/>
+		<set attributeName = "stroke-width" to = "3" begin="W2.mouseover" end="W2.mouseout"/>
 	</path>
 	<text x="649" y="65" style="text-anchor:end" font-family="sans-serif" dominant-baseline = "hanging">U1</text>
 	<text x="749" y="65" style="text-anchor:end" font-family="sans-serif" dominant-baseline = "hanging">V1</text>
