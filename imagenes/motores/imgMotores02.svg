@@ -1,0 +1,96 @@
+<svg version="1.1"
+	baseProfile="full"
+	width="1000" height="600"
+	xmlns="http://www.w3.org/2000/svg">
+	<!--Conexión a la linea de la placa-->
+	<path d="m 100 125 l 0 -100 m 140 0 l 0 100 m 140 0 l 0 -100" stroke = "black" stroke-width = "2" />
+	<text x="100" y="20" style="text-anchor:middle" font-family="sans-serif" dominant-baseline = "baseline">L1</text>
+	<text x="240" y="20" style="text-anchor:middle" font-family="sans-serif" dominant-baseline = "baseline">L2</text>
+	<text x="380" y="20" style="text-anchor:middle" font-family="sans-serif" dominant-baseline = "baseline">L3</text>
+	<!--Puentes Verticales-->
+	<g id="PuenteVertical" fill="none" stroke="none">
+		<rect x="70" y="85" width="60" height="200" stroke-width="1" rx="30" ry="30"/>
+		<set attributeName = "stroke" to = "black" begin="TextoTriangulo.mouseover" end="TextoTriangulo.mouseout"/>
+		<set attributeName = "fill" to = "gray" begin="TextoTriangulo.mouseover" end="TextoTriangulo.mouseout"/>
+	</g>
+	<use href="#PuenteVertical" x="140" y="0"></use>
+	<use href="#PuenteVertical" x="280" y="0"></use>
+	<!--Puentes Horizontal-->
+	<g id="PuenteHorizontal" fill="gray" stroke="black">
+		<rect x="70" y="225" width="200" height="60" stroke-width="1" rx="30" ry="30"/>
+		<set attributeName = "stroke" to = "none" begin="TextoTriangulo.mouseover" end="TextoTriangulo.mouseout"/>
+		<set attributeName = "fill" to = "none" begin="TextoTriangulo.mouseover" end="TextoTriangulo.mouseout"/>
+	</g>
+	<use href="#PuenteHorizontal" x="140" y="0"></use>
+	<!--Placa exterior-->
+	<rect x="30" y="50" width="420" height="270" fill="none" stroke="black" stroke-width="2" rx="20" ry="20"/>
+	<!--Tornillos-->
+	<g id="U1">
+		<circle cx="100" cy="115" r="20" stroke="black" stroke-width="1" fill="lightgray" />
+		<path d="m80 113 l 40 0" stroke="black" stroke-width="1" transform=" rotate (-45 100 115)"/>
+		<path d="m80 117 l 40 0" stroke="black" stroke-width="1" transform=" rotate (-45 100 115)"/>
+	</g>
+	<use href = "#U1" x="140" y="0" />
+	<use href = "#U1" x="280" y="0" />
+	<use href = "#U1" x="0" y="140" />
+	<use href = "#U1" x="140" y="140" />
+	<use href = "#U1" x="280" y="140" />
+	<text x="65" y="115" style="text-anchor:end" font-family="sans-serif" dominant-baseline = "middle">U1</text>
+	<text x="205" y="115" style="text-anchor:end" font-family="sans-serif" dominant-baseline = "middle">V1</text>
+	<text x="345" y="115" style="text-anchor:end" font-family="sans-serif" dominant-baseline = "middle">W1</text>
+	<text x="65" y="255" style="text-anchor:end" font-family="sans-serif" dominant-baseline = "middle">W2</text>
+	<text x="205" y="255" style="text-anchor:end" font-family="sans-serif" dominant-baseline = "middle">U2</text>
+	<text x="345" y="255" style="text-anchor:end" font-family="sans-serif" dominant-baseline = "middle">V2</text>
+	<!--Bobinas del esquema de conexión-->
+	<path id="bobinaR" d="m650 75 l 0 50 a 12.5 12.5 0 1 1 0 25 a 12.5 12.5 0 1 1 0 25 a 12.5 12.5 0 1 1 0 25
+		a 12.5 12.5 0 1 1 0 25 l 0 50" fill = "none" stroke = "black" stroke-width = "1"/>
+	<use href = "#bobinaR" x="100" y="0" />
+	<use href = "#bobinaR" x="200" y="0" />
+	<text x="645" y="125" style="text-anchor:end" font-family="sans-serif" dominant-baseline = "baseline">U1</text>
+	<text x="745" y="125" style="text-anchor:end" font-family="sans-serif" dominant-baseline = "baseline">V1</text>
+	<text x="845" y="125" style="text-anchor:end" font-family="sans-serif" dominant-baseline = "baseline">W1</text>
+	<text x="645" y="225" style="text-anchor:end" font-family="sans-serif" dominant-baseline = "hanging">U2</text>
+	<text x="745" y="225" style="text-anchor:end" font-family="sans-serif" dominant-baseline = "hanging">V2</text>
+	<text x="845" y="225" style="text-anchor:end" font-family="sans-serif" dominant-baseline = "hanging">W2</text>
+	<!--Conexiones L1, L2 y L3-->
+	<path id="Conexión" d="m650 25 l0 50 m100 -50 l 0 50 m100 -50 l0 50" stroke = "black" stroke-width = "1"/>
+	<text x="650" y="20" style="text-anchor:middle" font-family="sans-serif" dominant-baseline = "baseline">L1</text>
+	<text x="750" y="20" style="text-anchor:middle" font-family="sans-serif" dominant-baseline = "baseline">L2</text>
+	<text x="850" y="20" style="text-anchor:middle" font-family="sans-serif" dominant-baseline = "baseline">L3</text>
+	<!--Cableado en estrella-->
+	<g id="ConexionEstrella" fill="black" stroke = "black">
+		<path d="m650 275 l0 20 l 100 0 l 0 -20 m 0 20 l 100 0 l 0 -20" fill="none" stroke-width = "1"/>
+		<circle cx="750" cy="295" r="5" stroke="none"/>
+		<set attributeName = "fill" to = "none" begin="TextoTriangulo.mouseover" end="TextoTriangulo.mouseout"/>
+		<set attributeName = "stroke" to = "none" begin="TextoTriangulo.mouseover" end="TextoTriangulo.mouseout"/>
+	</g>
+	<!--Cableado en triángulo.-->
+	<g id="ConexionTiangulo" fill="none" stroke = "none">
+		<path id="Triángulo" d="m650 275 l50 0 l 0 -200 l 50 0 m 0 200
+			l50 0 l 0 -200 l 50 0 m 0 200 
+			l 0 50 l -250 0 l 0 -250 l 50 0" fill="none" stroke-width = "1"/>
+		<circle cx="650" cy="75" r="5" stroke="none"/>
+		<circle cx="750" cy="75" r="5" stroke="none"/>
+		<circle cx="850" cy="75" r="5" stroke="none"/>
+		<set attributeName = "fill" to = "black" begin="TextoTriangulo.mouseover" end="TextoTriangulo.mouseout"/>
+		<set attributeName = "stroke" to = "black" begin="TextoTriangulo.mouseover" end="TextoTriangulo.mouseout"/>
+	</g>
+	<text id="TextoEstrella" x="525" y="115" style="text-anchor:middle" font-family="sans-serif" font-weight="bold" 
+	dominant-baseline = "baseline">
+		<tspan>Conexión</tspan>
+		<tspan x="525" dy="1.2em">Estrella</tspan>
+		<tspan x="525" dy="1.2em">Y</tspan>
+		<set attributeName = "fill" to = "lightgray" begin="TextoTriangulo.mouseover" end="TextoTriangulo.mouseout"/>
+	</text>
+	<text id="TextoTriangulo" x="525" y="255" style="text-anchor:middle" fill="lightgray" font-family="sans-serif" font-weight="bold"
+		dominant-baseline = "baseline">
+		<tspan>Conexión</tspan>
+		<tspan x="525" dy="1.2em">Triángulo</tspan>
+		<tspan x="525" dy="1.2em">D</tspan>
+		<set attributeName = "fill" to = "black" begin="TextoTriangulo.mouseover" end="TextoTriangulo.mouseout"/>
+	</text>
+</svg>
+
+
+
+
