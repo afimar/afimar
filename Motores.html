@@ -184,9 +184,544 @@
 <object align="center" data="imagenes/motores/imgMotores02.svg" type="image/svg+xml">
 </object>
 
+
+<p>Simbología según norma UNE-EN 60617-6 (producción, transformación y con- versión de la energía eléctrica) para los motores asíncronos trifásicos.</p>
+
+<!-- 
+Insertar figura
+-->
+
+<p>En la figura tenemos a la izquierda el símbolo correspondiente al motor asíncrono con rotor en cortocircuito con acceso a los principios de los bobinados del estator, en el centro tenemos un motor que tiene accesibles los principios y los finales de los tres bobinados del rotor y que utilizaremos en un arranque estrella-triángulo y por último, a la derecha, aparece el símbolo correspondiente al motor asíncrono con rotor bobinado en el que aparece la nomenclatura correspondiente a los extremos de las bobinas del rotor (K, L, M).</p>
+
+<h1>Placa de características del motor asíncrono</h1>
+
+<p>Los motores eléctricos vienen acompañados de una placa de características cuyo contenido mínimo viene establecido por las normas que dicta la norma IEC 60034- 30:2008. Su información es necesaria para determinar su conexión y capacidades, pero incluye mucha más información.
+La placa de características, en idioma español, será fácilmente visible y estará firmemente sujeta al motor con remaches del mismo material que la placa. Debe ser de acero inoxidable, la pintura del motor no debe cubrirla y la información debe ser grabada en el metal de las placas de tal manera que pueda ser leída aunque desaparezcan la coloración e impresiones de superficie.</p>
+
+<p>A continuación detallamos los datos principales que tendremos que tener en cuenta a la hora de interpretar los datos de la placa.</p>
+
+<h1>Potencia asignada y potencia nominal</h1>
+
+<p>La potencia nominal es la máxima potencia que puede suministrar la máquina sin que sufra temperaturas peligrosas para su integridad cuando el resto de las magnitudes (tensión, frecuencia, velocidad, factor de potencia,...) tienen sus valores nominales, se encuentra a una altitud sobre el nivel del mar inferior a 1000 metros, la temperatura ambiente es 40°C y funciona en régimen permanente o indefinido (es decir, el tiempo suficiente para alcanzar el equilibrio térmico). Además, en el caso de máquinas de corriente alterna trifásica las tensiones deben estar equilibradas y tener un contenido armónico pequeño.</p>
+
+<p>Pues bien, la potencia asignada para máquinas rotativas está definida en la norma UNE-EN 600034-1 y es la máxima potencia que el fabricante de la máquina garantiza que, cuando se encuentra a una altitud sobre el nivel del mar inferior a 1000 metros y la temperatura ambiente no supera los 40°C, no da lugar a calentamientos peligrosos para un servicio dado. Además, en el caso de máquinas de corriente alterna trifásica las tensiones deben estar equilibradas y tener un contenido armónico pequeño. Evidentemente, para especificar completamente una potencia asignada hay que indicar el servicio a que se refiere.</p>
+
+<p>De la definición anterior se deduce que una misma máquina puede tener diferentes potencias asignadas dependiendo del servicio al que se refiera cada una de ellas. Una máquina tendrá una potencia asignada más alta para un servicio en el que la potencia se aplica un tiempo corto, antes de que se alcance el equilibrio térmico, y luego se la deja enfriar completamente y la misma máquina tendrá una potencia asignada menor para un servicio en el que se le aplique una potencia el tiempo suficiente para alcanzar el equilibrio térmico. La potencia asignada del primer servicio daría lugar a temperaturas peligrosas si la máquina funcionara con el segundo servicio, pero es perfectamente soportable para el servicio para la que ha sido definida.</p>
+
+<h1>Factor de Servicio (SF)</h1>
+
+<p>Por todo lo expuesto en el apartado anterior definimos el Factor de servicio como un multiplicador que se aplica a la potencia de placa del motor, para indicar la carga que puede llevar en condiciones nominales de servicio. Significa que el motor puede ser sobrecargado continuamente si el mismo es alimentado a voltaje y frecuencia nominal, y sin provocar daños. Por normativa, la placa debe indicar el factor de servicio, según lo muestra la figura, indicado como S.F., por las siglas en inglés de Service Factor.</p>
+
+<p>Cuando el motor está dimensionado para operar como máximo a su capacidad nominal (Potencia de Placa), de manera continua, se dice que no tiene factor de servicio. El Factor de Servicio se expresa en Por Unidad, con valores como: 1.1, 1.15, 1.2. . . Un motor que tiene un factor de servicio igual a 1.1 (SF1.1), puede operar a un 110 % de carga continua sin dañarse.</p>
+
+<h1>Tipo de aislamiento térmico (Ins. Cl.)</h1>
+	
+<p>	El límite de temperatura de funcionamiento del motor depende del tipo de material empleado en su construcción. Para fines de normalización, los materiales aislantes y los sistemas de aislamiento (cada uno formado por la combinación de varios materiales) son agrupados en CLASES DE AISLAMIENTO, cada cual definida por el respectivo límite de temperatura, o sea, por la mayor temperatura que el material o el sistema de aislamiento puede soportar continuamente sin que sea afectada su vida útil.</p>
+
+<p>Las clases de aislamiento utilizadas en máquinas eléctricas y los respectivos límites de temperatura conforme IEC 60034- 1, son las siguientes:</p>
+
+	<ol>
+		<li type="disc">Clase A (105°C)</li>
+		<li type="disc">Clase E (120°C)</li>
+		<li type="disc">Clase B (130°C)</li>
+		<li type="disc">Clase F (155°C)</li>
+		<li type="disc">Clase H (180°C)</li>
+	</ol>
+
+<p>Suele aparecer en la placa de características acompañada por el código Ins. Cl. (Insulation Class).</p>
+
+<h1>Clase de servicio (Duty Cycle)</h1>
+
+<p>Según la IEC 60034-1, es el grado de regularidad de la carga a la que el motor es sometido. Los motores normales son proyectados para régimen continuo, ( la carga es constante ), por tiempo indefinido, e igual a la potencia nominal del motor.
+Existen diez regímenes de servicio entandarizados (S1 . . . S10):</p>
+
+	<ol>
+		<li type="disc">
+			<p><strong>Régimen continuo (S1).</strong></p>
+			<p>Funcionamiento a carga constante de duración suficiente para que se alcance el equilibrio térmico.</p>
+		</li>
+		<li type="disc">
+			<p><strong>Régimen de Tiempo Limitado (S2).</strong></p>
+			Funcionamiento a carga constante, durante un cierto tiempo, inferior al necesario para alcanzar el equilibrio térmico.
+		</li>
+		<li type="disc">
+			<p><strong>Régimen intermitente periódico (S3).</strong></p>
+			<p>Secuencia de ciclos idénticos, cada cual incluyendo un período de funcionamiento con carga constante y un período 
+			desenergizado y en reposo. En este régimen, el ciclo es tal que la corriente de arranque no afecta de modo significativo la 
+			elevación de temperatura.</p>
+		</li>
+		<li type="disc">
+			<p><strong>Régimen intermitente periódico con arranques (S4).</strong></p>
+			<p>Secuencia de ciclos de régimen idénticos, cada cual consistiendo en un período de arranque, un período de funcionamiento a 
+			carga constante y un período de reposo, siendo tales períodos muy cortos, para que se alcance el equilibrio térmico.</p>
+		</li>
+		<li type="disc">
+			<p><strong>Régimen intermitente periódico con frenado eléctrico (S5).</strong></p>
+			<p>Secuencia de ciclos de régimen idénticos, cada cual consistiendo en un período de arranque, un período de funcionamiento a 
+			carga constante, un período de frenado eléctrico y un período desenergizado y en reposo, siendo tales períodos muy cortos 
+			para que se alcance el equilibrio térmico.</p>
+		</li>
+		<li type="disc">
+			<p><strong>Régimen de funcionamiento continuo periódico con carga intermitente (S6).</strong></p>
+			<p>Secuencia de ciclos de régimen idénticos, cada cuál consistiendo en un período de funcionamiento a carga constante y un 
+			período de funcionamiento en vacío, no existiendo período de reposo.</p>
+		</li>
+		<li type="disc">
+			<p><strong>Régimen de funcionamiento continuo periódico con frenado eléctrica (S7).</strong></p>
+			<p>Secuencia de ciclos de regímenes idénticos, cada cual consistiendo de un período de arranque, en un período de funcionamiento 
+			a carga constante y un período de frenado eléctrico, no existiendo el período de reposo.</p>
+		</li>
+		<li type="disc">
+			<p><strong>Régimen de funcionamiento continuo con cambio periódico en la relación carga/velocidad de rotación (S8).</strong></p>
+			<p>Secuencia de ciclos de regímenes idénticos, cada ciclo consiste en un período de arranque y un período de funcionamiento a 
+			carga constante, correspondiendo a una determinada velocidad de rotación, seguidos de uno o más períodos de funcionamiento a 
+			otras cargas constantes, correspondientes a diferentes velocidades de rotación.</p>
+			<p>No existe período de reposo.</p>
+		<li type="disc">	
+			<p><strong>Régimen con variaciones no periódicas de carga y de velocidad (S9).</strong></p>
+			<p>Régimen en el cual generalmente la carga y la velocidad varían no periódicamente, dentro del rango de funcionamiento 
+			admisible, incluyendo frecuentemente sobrecargas aplicadas que pueden ser muy superiores a la carga de referencia.</p>
+		</li>
+		<li type="disc">	
+			<p><strong>Régimen con cargas constantes distintas (S10).</strong></p>
+			<p>Régimen consistiendo en un número especifico de valores distintos de cargas (o cargas equivalentes) y, si es aplicable, 
+			velocidad, siendo cada combinación carga/velocidad mantenida por un tiempo suficiente para permitir que la máquina alcance el 
+			equilibrio térmico. La carga mínima durante un ciclo de régimen puede tener el valor cero (funcionamiento en vacío o reposo sin 
+			tensión).</p>
+		</li>	
+	</ol>
+
+<h1>Tipo de protección</h1>
+
+<p>El grado de protección IP hace referencia a la norma internacional CEI 60529, equivalente a la UNE20324, que específica los diferentes grados de protección que una máquina debe cumplir para trabajar en un determinado ambiente.</p>
+
+<p>Está formado por las siglas IP (International Protection) seguido de dos dígitos, el primero indica el índica de protección contra el ingreso de productos sólidos y el segundo dígito la protección frente al agua (IP[X][Y]).</p>
+
+<p>El significado del primer dígito (IP<strong>[X]</strong>[Y]):</p>
+
+<table align="center">
+	<caption class="tituloTabla"><strong>Tabla 1.</strong> Identificación de terminales</caption>
+	<tbody  class="BordeInferior BordeSuperior Bordedcho">
+	<tr class="BordeInferior">
+		<td class="fondocelda Bordedcho BordeIzdo"><strong>Nivel</strong></td>
+		<td class="fondocelda Bordedcho"><strong>Tamaño del objeto</strong></td>
+		<td class="fondocelda Bordedcho"><strong>Nivel de protección</strong></td>
+	</tr>
+	<tr class="BordeInferior">
+		<td class="Bordedcho BordeIzdo" align="center"><strong>0</strong></td>
+		<td class="Bordedcho">---</td>
+		<td class="Bordedcho">Sin protección</td>
+	</tr>
+	<tr class="BordeInferior">
+		<td class="Bordedcho BordeIzdo" align="center"><strong>1</strong></td>
+		<td class="Bordedcho">< 50 mm</td>
+		<td class="Bordedcho">El elemento que debe utilizarse para la prueba (esfera de 50 mm de diámetro) no debe llegar a entrar por completo.</td>
+	</tr>
+	<tr class="BordeInferior">
+		<td class="Bordedcho BordeIzdo" align="center"><strong>2</strong></td>
+		<td class="Bordedcho">< 12,5 mm</td>
+		<td class="Bordedcho">El elemento que debe utilizarse para la prueba (esfera de 12,5 mm de diámetro) no debe llegar a entrar por completo.</td>
+	</tr>
+	<tr class="BordeInferior">
+		<td class="Bordedcho BordeIzdo" align="center"><strong>3</strong></td>
+		<td class="Bordedcho">< 2,5 mm</td>
+		<td class="Bordedcho">El elemento que debe utilizarse para la prueba (esfera de 2,5 mm de diámetro) no debe entrar en lo más mínimo.</td>
+	</tr>
+	<tr class="BordeInferior">
+		<td class="Bordedcho BordeIzdo" align="center"><strong>4</strong></td>
+		<td class="Bordedcho">< 1 mm</td>
+		<td class="Bordedcho">El elemento que debe utilizarse para la prueba (esfera de 1 mm de diámetro) no debe entrar en lo más mínimo.</td>
+	</tr>
+	<tr class="BordeInferior">
+		<td class="Bordedcho BordeIzdo" align="center"><strong>5</strong></td>
+		<td class="Bordedcho">Protección contra polvo</td>
+		<td class="Bordedcho">La entrada de polvo no puede evitarse, pero el mismo no debe entrar en una cantidad tal que interfiera con el correcto 
+			funcionamiento del equipamiento.</td>
+	</tr>
+	<tr class="BordeInferior">
+		<td class="Bordedcho BordeIzdo" align="center"><strong>6</strong></td>
+		<td class="Bordedcho">Protección completa contra polvo</td>
+		<td class="Bordedcho">El polvo no entra bajo ninguna circunstancia.</td>
+	</tr>
+	</tbody>
+	</table>
+
+<p>Y el del <strong>segundo dígito</strong> (IP[X]<strong>[Y]</strong>):</p>
+
+<table align="center">
+	<caption class="tituloTabla"><strong>Tabla 1.</strong> Identificación de terminales</caption>
+	<tbody  class="BordeInferior BordeSuperior Bordedcho">
+	<tr class="BordeInferior">
+		<td class="fondocelda Bordedcho BordeIzdo"><strong>Nivel</strong></td>
+		<td class="fondocelda Bordedcho"><strong>Protección frente al agua</strong></td>
+		<td class="fondocelda Bordedcho"><strong>Nivel de protección</strong></td>
+	</tr>
+	<tr class="BordeInferior">
+		<td class="Bordedcho BordeIzdo" align="center"><strong>0</strong></td>
+		<td class="Bordedcho">Sin protección</td>
+		<td class="Bordedcho">El agua entrará en el equipamiento en poco tiempo.</td>
+	</tr>
+	<tr class="BordeInferior">
+		<td class="Bordedcho BordeIzdo" align="center"><strong>1</strong></td>
+		<td class="Bordedcho">Goteo de agua</td>
+		<td class="Bordedcho">No debe entrar el agua cuando se la deja caer, desde 200 mm de altura respecto del equipo, durante 10 minutos
+			(a razón de 3-5 <math><msup><mtext>mm</mtext><mn>3</mn></msup></math> por minuto)</td>
+	</tr>
+	<tr class="BordeInferior">
+		<td class="Bordedcho BordeIzdo" align="center"><strong>2</strong></td>
+		<td class="Bordedcho">Goteo de agua</td>
+		<td class="Bordedcho">No debe entrar el agua cuando se la deja caer, durante 10 minutos (a razón de 3-5
+			<math><msup><mtext>mm</mtext><mn>3</mn></msup></math>  por minuto). 
+			Dicha prueba se realizará cuatro veces a razón de una por cada giro de 15&deg; tanto en sentido vertical 
+			como horizontal, partiendo cada vez de la posición normal de trabajo.</td>
+	</tr>
+	<tr class="BordeInferior">
+		<td class="Bordedcho BordeIzdo" align="center"><strong>3</strong></td>
+		<td class="Bordedcho">Agua nebulizada (spray)</td>
+		<td class="Bordedcho">No debe entrar el agua nebulizada en un ángulo de hasta 60&deg; a derecha e izquierda de la 
+			vertical a un promedio de 11 litros por minuto y a una presión de 80-100
+			<math><mtext>kN</mtext><mo>/</mo><msup><mtext>m</mtext><mn>2</mn></msup></math>
+			durante un tiempo que no sea menor a 5 minutos.</td>
+	</tr>
+	<tr class="BordeInferior">
+		<td class="Bordedcho BordeIzdo" align="center"><strong>4</strong></td>
+		<td class="Bordedcho">Chorros de agua</td>
+		<td class="Bordedcho">No debe entrar el agua arrojada desde cualquier ángulo a un promedio de 10 litros por minuto y a una presión 
+			de <math><mn>80 - 100</mn><mtext>kN</mtext><mo>/</mo><msup><mtext>m</mtext><mn>2</mn></msup></math> durante un tiempo que no sea menor a 5 minutos.</td>
+	</tr>
+	<tr class="BordeInferior">
+		<td class="Bordedcho BordeIzdo" align="center"><strong>5</strong></td>
+		<td class="Bordedcho">Chorros de agua</td>
+		<td class="Bordedcho">No debe entrar el agua arrojada a chorro (desde cualquier ángulo) por medio de una boquilla de 6,3 mm de diámetro, 
+			a un promedio de 12,5 litros por minuto y a una presión de <math><mn>30</mn><mtext>kN</mtext><mo>/</mo><msup><mtext>m</mtext><mn>2</mn></msup></math> 
+			durante un tiempo que no sea menor a 3 minutos y a una distancia no menor de 3 metros.</td>
+	</tr>
+	<tr class="BordeInferior">
+		<td class="Bordedcho BordeIzdo" align="center"><strong>6</strong></td>
+		<td class="Bordedcho">Chorros muy potentes de agua</td>
+		<td class="Bordedcho">No debe entrar el agua arrojada a chorros (desde cualquier ángulo) por medio de una boquilla de 12,5 mm de diámetro, 
+			a un promedio de 100 litros por minuto y a una presión de <math><mn>100</mn><mtext>kN</mtext><mo>/</mo><msup><mtext>m</mtext><mn>2</mn></msup></math>  
+			durante no menos de 3 minutos y a una distancia que no sea menor de 3 metros.</td>
+	</tr>
+	<tr class="BordeInferior">
+		<td class="Bordedcho BordeIzdo" align="center"><strong>7</strong></td>
+		<td class="Bordedcho">Inmersión completa en agua</td>
+		<td class="Bordedcho">No debe entrar agua (El objeto debe soportar sin filtración alguna la inmersión completa a 1 metro durante 30 minutos).</td>
+	</tr>
+	<tr class="BordeInferior">
+		<td class="Bordedcho BordeIzdo" align="center"><strong>8</strong></td>
+		<td class="Bordedcho">Inmersión completa y continua en agua</td>
+		<td class="Bordedcho">No debe entrar agua.</td>
+	</tr>
+	</tbody>
+	</table>
+
+
+<h1>Eficiencia energética</h1>
+
+<p>Dada la diversidad de normativas para la clasificación de la eficiencia de motores, en 2008, IEC publicó la norma <strong>IEC 60034-30</strong> (Máquinas eléctricas rotativas - Parte 30: Clases de eficiencia de los motores de inducción monofásicos, trifásicos y de jaula, código IE). De este modo se impuso un nuevo sistema de clasificación de eficiencia que unificó las definiciones de <strong>CEMEP</strong> (<em>European Committee of Manufacturers of Electrical Machines and Power Electronics</em>) y <strong>NEMA</strong> (<em>National Electrical Manufacturers Association - EE.UU.</em>).</p>
+
+La clasificación IEC considera: Eficiencia Estándar (<strong>IE1</strong>), Eficiencia Alta (<strong>IE2</strong>), Eficiencia Premium (<strong>IE3</strong>) y Eficiencia Premium Súper (<strong>IE4</strong>).
+
+La norma IEC 60034-30:2008 define el rendimiento de los motores asíncronos de baja tensión (Un < 1000V) desde 0,75 a 375 KW de 2,4 y 6 polos, para servicio S1 o S3
+
+
+
+<table align="center">
+<caption class="tituloTabla"><strong>Tabla 1.</strong> Identificación de terminales</caption>
+<tbody class="BordeInferior BordeSuperior Bordedcho BordeIzdo" align="center">
+	<tr class="BordeInferior">
+		<td class="Bordedcho"><strong>Potencia</strong></td>
+		<td colspan="3"><strong>IE 1</strong></td>
+		<td colspan="3" class="BordeIzdo"><strong>IE 2</strong></td>
+		<td colspan="3" class="BordeIzdo"><strong>IE 3</strong></td>
+		<td colspan="3" class="BordeIzdo"><strong>IE 4</strong></td>
+	</tr>
+	<tr class="BordeInferior">
+		<td class="Bordedcho"><strong>kW</strong></td>
+		<td><strong>2</strong></td><td><strong>4</strong></td><td><strong>6</strong></td>
+		<td class="BordeIzdo"><strong>2</strong></td><td><strong>4</strong></td><td><strong>6</strong></td>
+		<td class="BordeIzdo"><strong>2</strong></td><td><strong>4</strong></td><td><strong>6</strong></td>
+		<td class="BordeIzdo"><strong>2</strong></td><td><strong>4</strong></td><td><strong>6</strong></td>
+	</tr>
+	<tr>
+		<td class="Bordedcho">0,75</td>
+		<td>72,1</td><td>72,1</td><td>70</td>
+		<td class="BordeIzdo">77,4</td><td>79,6</td><td>75,9</td>
+		<td class="BordeIzdo">80,7</td><td>82,5</td><td>78,9</td>
+		<td class="BordeIzdo">84,9</td><td>85,6</td><td>83,1</td>
+	</tr>
+	<tr>
+		<td class="Bordedcho">1,1</td>
+		<td>75</td><td>75</td><td>72,9</td>
+		<td class="BordeIzdo">79,6</td><td>81,4</td><td>78,1</td>
+		<td class="BordeIzdo">82,7</td><td>84,1</td><td>81</td>
+		<td class="BordeIzdo">86,7</td><td>87,4</td><td>84,1</td>
+	</tr>
+	<tr>
+		<td class="Bordedcho">1,5</td>
+		<td>77,2</td><td>77,2</td><td>75,2</td>
+		<td class="BordeIzdo">81,3</td><td>82,8</td><td>79,8</td>
+		<td class="BordeIzdo">84,2</td><td>85,3</td><td>82,5</td>
+		<td class="BordeIzdo">87,5</td><td>88,1</td><td>86,2</td>
+	</tr>
+	<tr>
+		<td class="Bordedcho">2,2</td>
+		<td>79,7</td><td>79,7</td><td>77,7</td>
+		<td class="BordeIzdo">83,2</td><td>84,3</td><td>81,8</td>
+		<td class="BordeIzdo">85,9</td><td>86,7</td><td>84,3</td>
+		<td class="BordeIzdo">89,1</td><td>89,7</td><td>87,1</td>
+	</tr>
+	<tr>
+		<td class="Bordedcho">3</td>
+		<td>85,1</td><td>81,5</td><td>79,7</td>
+		<td class="BordeIzdo">84,6</td><td>85,5</td><td>83,3</td>
+		<td class="BordeIzdo">87,1</td><td>87,7</td><td>85,6</td>
+		<td class="BordeIzdo">89,7</td><td>90,3</td><td>88,7</td>
+	</tr>
+	<tr>
+		<td class="Bordedcho">4</td>
+		<td>83,1</td><td>83,1</td><td>81,4</td>
+		<td class="BordeIzdo">85,8</td><td>86,6</td><td>84,6</td>
+		<td class="BordeIzdo">88,1</td><td>88,6</td><td>86,8</td>
+		<td class="BordeIzdo">90,3</td><td>90,9</td><td>89,5</td>
+	</tr>
+	<tr>
+		<td class="Bordedcho">5,5</td>
+		<td>84,7</td><td>84,7</td><td>83,1</td>
+		<td class="BordeIzdo">87</td><td>87,7</td><td>86</td>
+		<td class="BordeIzdo">89,2</td><td>89,6</td><td>88</td>
+		<td class="BordeIzdo">91,5</td><td>92,1</td><td>90,2</td>
+	</tr>
+	<tr>
+		<td class="Bordedcho">7,5</td>
+		<td>86</td><td>86</td><td>84,7</td>
+		<td class="BordeIzdo">88,1</td><td>88,7</td><td>87,2</td>
+		<td class="BordeIzdo">90,1</td><td>90,4</td><td>89,1</td>
+		<td class="BordeIzdo">92,1</td><td>92,6</td><td>91,5</td>
+	</tr>
+	<tr>
+		<td class="Bordedcho">11</td>
+		<td>87,6</td><td>87,6</td><td>86,4</td>
+		<td class="BordeIzdo">89,4</td><td>89,8</td><td>88,7</td>
+		<td class="BordeIzdo">91,2</td><td>91,4</td><td>90,3</td>
+		<td class="BordeIzdo">93</td><td>93,6</td><td>92,5</td>
+	</tr>
+	<tr>
+		<td class="Bordedcho">15</td>
+		<td>88,7</td><td>88,7</td><td>87,7</td>
+		<td class="BordeIzdo">90,3</td><td>90,6</td><td>89,7</td>
+		<td class="BordeIzdo">91,9</td><td>92,1</td><td>91,2</td>
+		<td class="BordeIzdo">93,4</td><td>94</td><td>93,1</td>
+	</tr>
+	<tr>
+		<td class="Bordedcho">18,5</td>
+		<td>89,3</td><td>89,3</td><td>88,6</td>
+		<td class="BordeIzdo">90,9</td><td>91,2</td><td>90,4</td>
+		<td class="BordeIzdo">92,4</td><td>92,6</td><td>91,7</td>
+		<td class="BordeIzdo">93,8</td><td>94,3</td><td>93,5</td>
+	</tr>
+	<tr>
+		<td class="Bordedcho">22</td>
+		<td>89,9</td><td>89,9</td><td>89,2</td>
+		<td class="BordeIzdo">91,3</td><td>91,6</td><td>90,9</td>
+		<td class="BordeIzdo">92,7</td><td>93</td><td>92,2</td>
+		<td class="BordeIzdo">94,2</td><td>94,7</td><td>93,9</td>
+	</tr>
+	<tr>
+		<td class="Bordedcho">30</td>
+		<td>90,7</td><td>90,7</td><td>90,2</td>
+		<td class="BordeIzdo">92</td><td>92,3</td><td>91,7</td>
+		<td class="BordeIzdo">93,3</td><td>93,6</td><td>92,9</td>
+		<td class="BordeIzdo">94,5</td><td>95</td><td>94,3</td>
+	</tr>
+	<tr>
+		<td class="Bordedcho">37</td>
+		<td>91,2</td><td>91,2</td><td>90,8</td>
+		<td class="BordeIzdo">92,5</td><td>92,7</td><td>92,2</td>
+		<td class="BordeIzdo">93,7</td><td>93,9</td><td>93,3</td>
+		<td class="BordeIzdo">94,8</td><td>95,3</td><td>94,6</td>
+	</tr>
+	<tr>
+		<td class="Bordedcho">45</td>
+		<td>91,7</td><td>91,7</td><td>91,4</td>
+		<td class="BordeIzdo">92,9</td><td>93,1</td><td>92,7</td>
+		<td class="BordeIzdo">94</td><td>94,2</td><td>93,7</td>
+		<td class="BordeIzdo">95,1</td><td>95,6</td><td>94,9</td>
+	</tr>
+	<tr>
+		<td class="Bordedcho">55</td>
+		<td>92,1</td><td>92,1</td><td>91,9</td>
+		<td class="BordeIzdo">93,2</td><td>93,5</td><td>93,1</td>
+		<td class="BordeIzdo">94,3</td><td>94,6</td><td>94,1</td>
+		<td class="BordeIzdo">95,4</td><td>95,8</td><td>95,2</td>
+	</tr>
+	<tr>
+		<td class="Bordedcho">75</td>
+		<td>92,7</td><td>92,7</td><td>92,6</td>
+		<td class="BordeIzdo">93,8</td><td>94</td><td>93,7</td>
+		<td class="BordeIzdo">94,7</td><td>95</td><td>94,6</td>
+		<td class="BordeIzdo">95,6</td><td>96</td><td>95,4</td>
+	</tr>
+	<tr>
+		<td class="Bordedcho">90</td>
+		<td>93</td><td>93</td><td>92,9</td>
+		<td class="BordeIzdo">94,1</td><td>94,2</td><td>94</td>
+		<td class="BordeIzdo">95</td><td>95,2</td><td>94,9</td>
+		<td class="BordeIzdo">95,8</td><td>96,2</td><td>95,6</td>
+	</tr>
+	<tr>
+		<td class="Bordedcho">110</td>
+		<td>93,3</td><td>93,3</td><td>93,3</td>
+		<td class="BordeIzdo">94,3</td><td>94,5</td><td>94,3</td>
+		<td class="BordeIzdo">95,2</td><td>95,4</td><td>95,1</td>
+		<td class="BordeIzdo">96</td><td>96,4</td><td>95,6</td>
+	</tr>
+	<tr>
+		<td class="Bordedcho">132</td>
+		<td>93,5</td><td>93,5</td><td>93,5</td>
+		<td class="BordeIzdo">94,6</td><td>94,7</td><td>94,6</td>
+		<td class="BordeIzdo">95,4</td><td>95,6</td><td>95,4</td>
+		<td class="BordeIzdo">96</td><td>96,5</td><td>95,8</td>
+	</tr>
+	<tr>
+		<td class="Bordedcho">160</td>
+		<td>93,7</td><td>93,8</td><td>93,8</td>
+		<td class="BordeIzdo">94,8</td><td>94,9</td><td>94,8</td>
+		<td class="BordeIzdo">95,6</td><td>95,8</td><td>95,6</td>
+		<td class="BordeIzdo">96,2</td><td>96,5</td><td>96</td>
+	</tr>
+	<tr>
+		<td class="Bordedcho">200</td>
+		<td>94</td><td>94</td><td>94</td>
+		<td class="BordeIzdo">95</td><td>95,1</td><td>95</td>
+		<td class="BordeIzdo">95,8</td><td>96</td><td>95,8</td>
+		<td class="BordeIzdo">96,3</td><td>96,6</td><td>96,1</td>
+	</tr>
+	<tr>
+		<td class="Bordedcho">250</td>
+		<td>94</td><td>94</td><td>94</td>
+		<td class="BordeIzdo">95</td><td>95,1</td><td>95</td>
+		<td class="BordeIzdo">95,8</td><td>96</td><td>95,8</td>
+		<td class="BordeIzdo">96,4</td><td>96,7</td><td>96,1</td>
+	</tr>
+	<tr>
+		<td class="Bordedcho">315</td>
+		<td>94</td><td>94</td><td>94</td>
+		<td class="BordeIzdo">95</td><td>95,1</td><td>95</td>
+		<td class="BordeIzdo">95,8</td><td>96</td><td>95,8</td>
+		<td class="BordeIzdo">96,5</td><td>96,8</td><td>96,1</td>
+	</tr>
+	<tr>
+		<td class="Bordedcho">355</td>
+		<td>94</td><td>94</td><td>94</td>
+		<td class="BordeIzdo">95</td><td>95,1</td><td>95</td>
+		<td class="BordeIzdo">95,8</td><td>96</td><td>95,8</td>
+		<td class="BordeIzdo">96,6</td><td>96,8</td><td>96,1</td>
+	</tr>
+	<tr>
+		<td class="Bordedcho">375</td>
+		<td>94</td><td>94</td><td>94</td>
+		<td class="BordeIzdo">95</td><td>95,1</td><td>95</td>
+		<td class="BordeIzdo">95,8</td><td>96</td><td>95,8</td>
+		<td class="BordeIzdo">-400</td><td>96,6</td><td>96,8</td>
+	</tr>
+</tbody>
+</table>
+
+
+<h1>Interpretación</h1>
+
+<p>Vamos a interpretar una placa de características incluída en el catálogo "Motores con rotor de jaula IEC"  del fabricante alemán Siemens que muestra la siguiente imagen:</p>
+
+<div align="center"><img src="imagenes/motores/imgMotores04.svg" width="50%"></div>
+
+<p>En esta placa observamos:</p>
+
+<ol>
+	<li><strong>Marca:</strong> Siemens.</li>
+	<li><strong>Pais de fabricación:</strong> Alemania.</li>
+	<li><strong>Tipo de motor:</strong> Mediante la leyenda «3􏰀 Mot.» indica que es un motor trifásico de C.A.</li>
+	<li><strong>Referencia del fabricante:</strong> 1LA7166-2AA60-Z</li>
+	<li><strong>Número de serie:</strong> E 0107/471101 01 001</li>
+	<li>El código <strong>«IEC/EN 60034»</strong> nos indica que el motor cumple la normativa del Comité Electrotécnico Internacional 
+		en los aspectos relativos a las máquinas eléctricas.</li>
+	<li><strong>Logo de eficiencia energética:</strong> IE1</li>
+	<li><strong>Peso:</strong> 86 kg</li>
+	<li><strong>Forma constructiva del motor:</strong> La norma IEC 600024-7 clasifica los motores atendiendo a la forma de fijación o 
+		anclaje y a la posición de trabajo según sea paralelo a la horizontal (letra <strong>«B»</strong>) o en posición vertical 
+		(letra <strong>«V»</strong>).<br>
+		En este caso es un motor <strong>«IM B3»</strong>. Este tipo constructivo de motor se caracteriza por ser fijado mediante patas, 
+		los talados en las patas son pasantes para ser fijados mediante tornillo a la bancada. No lleva brida delantera, por lo tanto 
+		ningún elemento de fijación, a parte de las patas.</li>
+	<li>El código <strong>«160 L»</strong> nos da el tamaño del motor.</li>
+	<li>C<strong>ódigo de protección:</strong> El código IP55 significa que está protegido contra depósitos de polvo y chorros de agua a 
+		baja presión en todas direcciones.</li>
+	<li>«<strong>Th.Cl. 155 (F)</strong>». Este código nos indica el tipo de aislamiento térmico, en este caso clase F que soporta 155&deg;.</li>
+	<li>Las características electromecánicas del motor divididas en dos columnas. La primera columna se refiere a una frecuencia de 50 Hz 
+		y la segunda para una frecuencia de 60 Hz. Cabe recordar que en Europa, África y la mayor parte de Asia la frecuencia es de 
+		50 Hz mientras que en la mayor parte de continente americano (salvo la parte sur de América del Sur) la frecuencia comercial 
+		es de 60 Hz.
+		<ol>
+			<li type="disc"><strong>Tensiones:</strong> Mediante la leyenda «400/690V &Delta;/Y» nos indica las dos tenciones de funcionamiento 
+				del motor. La mayor de ellas para la conexión en estrella y la menor en triángulo.</li>
+			<li type="disc"><strong>Potencia:</strong> 18.5 kW es la potencia útil del motor, es decir, la potencia disponible en el eje. 
+				Esta potencia vendrá dada para los valores nominales de la máquina.</li>
+			<li type="disc"><strong>Corrientes:</strong> 33.0/19.1 A son las intensidades le linea consumidas por el motor en 
+				condiciones nominales, en este caso, entregando en el eje una potencia de 18.5 kW. La primera, la más alta, en 
+				conexión triángulo y la segunda, la menor, en conexión estrella.</li>
+			<li type="disc"><strong>Factor de potencia:</strong> cos &phi; 0,91 corresponde al factor de potencia de la máquina en 
+				condiciones nominales.</li>
+			<li type="disc"><strong>«2490/min.:»</strong> Es la velocidad de giro del rotor en condiciones nominales y revoluciones por minuto. 
+				De este valor podremos obtener más adelante el número de polos de la máquina, en este caso 2p=2.</li>
+			<li type="disc">En la columna de la derecha aparecen las mismas características para la frecuencia de 60 Hz. Nótese que a 60 Hz 
+				sólo tenemos la posibilidad de realizar la conexión en triángulo a 460 V.</li>
+		</ol>
+	</li>
+	<li><strong>Eficiencia energética:</strong> Se trata de un motor de referencia estándar de rendimiento 89.3%, que se corresponde con 
+		la norma IEC 60034-30 tal y como se muestra en la tabla del apartado 3.3.6.</li>
+</ol>
+
+<h1>Principio de funcionamiento.</h1>
+
+<p>Para explicar el funcionamiento de los motores eléctricos necesitamos conocer algunas de las leyes fundamentales que explican el funcionamiento del electromagnetismo. Todos conocemos de etapas de estudio anteriores el funcionamiento de los imanes
+permanentes, la existencia de los polos magnéticos terrestres o el concepto de lineas de fuerza y como las veíamos utilizando un imán 
+y polvo de ferrita.</p>
+
+<p>Trataremos ahora de explicar las distintas interacciones que suceden entre un conductor recorrido por una corriente eléctrica y un campo magnético, interacciones que nos van a permitir entender el funcionamiento del motor eléctrico.</p>
+
+<p>Una ley física fundamental nos indica nos indica que cuando circula una corriente eléctrica a través de un conductor rectilíneo se crea, alrededor del conductor, un campo magnético cuyas líneas de fuerza son concéntricas al conductor y su sentido de giro se corresponde con el sentido de giro de un sacacorchos que avance en el sentido de la corriente eléctrica.</p>
+
+<div align="center"><img src="imagenes/motores/imgMotores05.svg" width="50%"></div>
+
+<p>Este campo magnético creado alrededor del conductor provoca una distorsión del campo magnético terrestre en las cercanías del conductor, distorsión que se aprecia acercando una brújula al conductor.</p>
+
+<p>El siguiente paso hacia la consecución del motor consiste darle forma de espira al conductor haciendo circular una corriente eléctrica por él, tal y como muestra la figura.</p>
+
+<div align="center"><img src="imagenes/motores/imgMotores06.svg" width="50%"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
 <object align="center" data="imagenes/motores/imgMotores03.svg" type="image/svg+xml">
 </object>
-
+-->
 
 </div>
 
