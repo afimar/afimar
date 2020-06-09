@@ -1,0 +1,41 @@
+<svg version="1.1"
+	baseProfile="full"
+	width="600" height="300"
+	xmlns="http://www.w3.org/2000/svg">
+	<!--Solenoide-->
+	<path d="m 150 200 l 300 0 l 0 -100 l -300 0 Z" stroke="black" stroke-width="2" fill="none"/>
+	<!--Lineas de campo derecha-->
+	<ellipse cx="300" cy="90" rx="250" ry="75" stroke="orange" stroke-width="2" fill="none" 
+		clip-path="url('#clipLineaFuerza02')"/>
+	<ellipse cx="300" cy="90" rx="200" ry="50" stroke="orange" stroke-width="2" fill="none" 
+		clip-path="url('#clipLineaFuerza02')"/>
+	<ellipse cx="300" cy="215" rx="250" ry="75" stroke="orange" stroke-width="2" fill="none" 
+		clip-path="url('#clipLineaFuerza02')"/>
+	<ellipse cx="300" cy="215" rx="200" ry="50" stroke="orange" stroke-width="2" fill="none" 
+		clip-path="url('#clipLineaFuerza02')"/>
+	<!--Solenoide-->
+	<path d="m 150 200 l 300 0 l 0 -100 l -300 0 Z" stroke="black" stroke-width="2" fill="lightgray"/>
+	<!--Conductor-->
+	<path d="M 187.5 300 l 0 -100 m 0 -100 a 12.5 12.5 0 0 1 25 0 l 0 100 a 12.5 12.5 0 1 0 25 0 
+		m 0 -100 a 12.5 12.5 0 0 1 25 0 l 0 100 a 12.5 12.5 0 1 0 25 0
+		m 0 -100 a 12.5 12.5 0 0 1 25 0 l 0 100 a 12.5 12.5 0 1 0 25 0
+		m 0 -100 a 12.5 12.5 0 0 1 25 0 l 0 100 a 12.5 12.5 0 1 0 25 0
+		m 0 -100 a 12.5 12.5 0 0 1 25 0 l 0 200 " stroke="black" stroke-width="4" fill="none"/>
+	<!--Flechas-->
+	<g id="FlechaIzquierda">
+		<path d="M 300 15 l -17.32 5 l 0 -10 Z" stroke="orange" stroke-width="2" fill="orange"/>
+	</g>
+	<use href = "#FlechaIzquierda" x="0" y="25"/>
+	<use href = "#FlechaIzquierda" x="0" y="250"/>
+	<use href = "#FlechaIzquierda" x="0" y="275"/>
+	Flechas Intensidad-->
+	<path d="m 412.5 250 l -8 30 l 16 0 Z" stroke="none" fill="black"/>
+	<text x="430" y="300" style="text-anchor:start" font-family="sans-serif" dominant-baseline = "baseline" font-size = "36px">I</text>
+</svg>
+
+
+
+
+
+	
+	

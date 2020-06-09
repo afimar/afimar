@@ -1,0 +1,30 @@
+<svg version="1.1"
+	baseProfile="full"
+	width="600" height="200"
+	xmlns="http://www.w3.org/2000/svg">
+	<!--Polos-->
+	<path d="m 50 50 l 150 0 l 0 100 l -150 0 Z" stroke="none"  fill="orangered"/>
+	<path d="m 400 50 l 150 0 l 0 100 l -150 0 Z" stroke="none" fill="royalblue"/>
+	<text x="125" y="100" text-anchor="middle" font-size = "30px" dominant-baseline = "middle" fill="white">N</text>
+	<text x="475" y="100" text-anchor="middle" font-size = "30px" dominant-baseline = "middle" fill="white">S</text>
+	<!--Lineas de fuerza-->
+	<g id="LineaFuerza">
+		<path d="m 200 60 l 200 0" stroke="orange" stroke-width="2" stroke-dasharray="10,10"/>
+		<path d="m 400 60 l -15 -5 l 0 10 Z" stroke="none" fill="orange"/>
+	</g>
+	<use href = "#LineaFuerza" x="0" y="20"/>
+	<use href = "#LineaFuerza" x="0" y="40"/>
+	<use href = "#LineaFuerza" x="0" y="60"/>
+	<use href = "#LineaFuerza" x="0" y="80"/>
+	<!--Conductor-->
+	<path d="m 300 60 l 0 50 l -5 -15 l 10 0 l -5 15" stroke="black" stroke-width="2" fill="black"/>
+	<circle cx="300" cy="60" r="10" stroke="black" stroke-width="1" fill="white"/>
+	<path d="m 290 60 l 20 0 m -10 -10 l 0 20" stroke="black" stroke-width="2" fill="none"/>
+</svg>
+
+
+
+
+
+	
+	

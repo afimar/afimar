@@ -205,6 +205,8 @@ h3{
 
 table{
     border-collapse: collapse;
+	font-size:80%;
+	line-height: 1.5;
 }
 
 table td {

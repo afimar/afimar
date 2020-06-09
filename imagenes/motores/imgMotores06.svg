@@ -2,6 +2,8 @@
 	baseProfile="full"
 	width="1000" height="1000"
 	xmlns="http://www.w3.org/2000/svg">
+	<!--Plano-->
+	<path d="M 276.8 650 l 0 -400 l 433.01 -250 l 0 400 Z" stroke="none" fill="lightgray" opacity="0.35"/>
 	<!--Espira-->
 	<path d="m 450 650 l 0 -100 l -173.2 100 l 0 -400 l 433.01 -250 l 0 400
 		l -173.2 100 l 0 100" stroke="black" stroke-width="2" fill="none"/>
@@ -97,15 +99,34 @@
 	</clipPath>
 	<ellipse cx="709.81" cy="200" rx="50" ry="25" stroke="orange" stroke-width="2" fill="none" stroke-dasharray="10" 
 		clip-path="url('#clipLineaFuerza12')"/>
+	<!--Flechas-->
+	<g id="FlechaDerecha">
+		<path d="m 709.81 300 l 17.32 5 l 0 -10 Z" stroke="orange" stroke-width="2" fill="orange"/>
+	</g>
+	<use href = "#FlechaDerecha" x="0" y="-25"/>
+	<use href = "#FlechaDerecha" x="0" y="-50"/>
+	<use href = "#FlechaDerecha" x="0" y="-75"/>
+	<g id="FlechaIzquierda">
+		<path d="m 276.8 550 l -17.32 5 l 0 -10 Z" stroke="orange" stroke-width="2" fill="orange"/>
+	</g>
+	<use href = "#FlechaIzquierda" x="0" y="-25"/>
+	<use href = "#FlechaIzquierda" x="0" y="-50"/>
+	<use href = "#FlechaIzquierda" x="0" y="-75"/>
+	<!--Flechas Intensidad-->
+	<path d="m 450 585 l -8 30 l 16 0 Z" stroke="none" fill="black"/>
+	<text x="460" y="585" style="text-anchor:middle" font-family="sans-serif" dominant-baseline = "baseline" font-size = "36px">I</text>
+	<path d="m 536.60 565 l -8 -30 l 16 0 Z" stroke="none" fill="black"/>
+	<text x="546.60" y="585" style="text-anchor:middle" font-family="sans-serif" dominant-baseline = "baseline" font-size = "36px">I</text>
+	<!--Texto Polos-->
+	<text x="709.81" y="475" style="text-anchor:start" font-family="sans-serif" dominant-baseline = "baseline" font-size = "36px"
+		stroke="red" fill="red">Polo NORTE</text>
+	<text x="276.8" y="200" style="text-anchor:end" font-family="sans-serif" dominant-baseline = "middle" font-size = "36px"
+		stroke="blue" fill="blue">Polo SUR</text>
 </svg>
 
 
-<!--
 
-	<clipPath id='clip1'>
-		<path d="m 276.8 450 l 433.01 -250 l 0 -200 l -433.01 250 Z" stroke="orange" stroke-width="2" fill="none"/>
-	</clipPath>
+
+
 	
-	<ellipse cx="276.8" cy="450" rx="200" ry="100" stroke="orange" stroke-width="2" fill="none" clip-path="url('#clip1')"/>
-
--->
+	

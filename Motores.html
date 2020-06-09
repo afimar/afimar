@@ -13,7 +13,12 @@
 	
 	<script type="text/javascript"
 	    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-	</script>	
+	</script>
+	<script src="js/snap.svg-min.js"></script>
+	<script src="js/raphael.min.js"></script>
+	<script src="js/raphael.boolean.js"></script>
+	
+	
 </head>
 
 <div id="header">
@@ -221,11 +226,11 @@ La placa de características, en idioma español, será fácilmente visible y es
 <p>Las clases de aislamiento utilizadas en máquinas eléctricas y los respectivos límites de temperatura conforme IEC 60034- 1, son las siguientes:</p>
 
 	<ol>
-		<li type="disc">Clase A (105°C)</li>
-		<li type="disc">Clase E (120°C)</li>
-		<li type="disc">Clase B (130°C)</li>
-		<li type="disc">Clase F (155°C)</li>
-		<li type="disc">Clase H (180°C)</li>
+		<li type="disc">Clase A (105&deg;C)</li>
+		<li type="disc">Clase E (120&deg;C)</li>
+		<li type="disc">Clase B (130&deg;C)</li>
+		<li type="disc">Clase F (155&deg;C)</li>
+		<li type="disc">Clase H (180&deg;C)</li>
 	</ol>
 
 <p>Suele aparecer en la placa de características acompañada por el código Ins. Cl. (Insulation Class).</p>
@@ -700,43 +705,308 @@ y polvo de ferrita.</p>
 
 <div align="center"><img src="imagenes/motores/imgMotores06.svg" width="50%"></div>
 
+<p>En la figura observamos que al modelar el conductor en forma de espira las lineas de fuerza se concentran en el interior de la espira, aumentando el campo magnético.</p>
+
+<p>Al mismo tiempo observamos que las lineas de fuerza ahora tienen un sentido con respecto a la espira, es decir, las lineas de fuerza entran por la cara frontal de la espira y salen por la cara posterior. De esta manera hemos construido un electroimán elemental con el polo norte en la parte frontal de la espira y el polo sur en la trasera.</p>
+
+<p>Obsérvese que si cambiamos el sentido de circulación de la corriente cambia la polaridad del electroimán.</p>
+
+<p>El campo magnético creado en el interior de la espira es perpendicular al plano formado por la misma y su sentido viene dado por el avance de un sacacorchos que gira en el sentido de la corriente.</p>
+
+<p>Si a este mismo conductor le damos 10 vueltas formando una bobina con 10 espiras el campo magnético será 10 veces más fuerte que el originado por la única espira.</p>
+
+<p>Otro factor que afecta a la fuerza del campo magnético es la cantidad de corriente que circula a través del conductor. Un aumento del flujo de la corriente provoca un aumento de la intensidad del campo magnético.</p>
+
+<p>Los dos factores que determinan la cantidad de lineas de flujo producidas por el electroimán (proporcionales a la intensidad del campo magnético) son la cantidad de vueltas o espiras del cable que integran la bobina y la intensidad de corriente que circula a través de él. La fuerza del electroimán es proporcional a sus amperios-vuelta que se obtienen multiplicando la intensidad de corriente por el número de espiras de la bobina.</p>
+
+<p>Las bobinas pueden enrollarse alrededor de cualquier material para formar un electroimán. El material base sobre el que se forma la bobina se denomina núcleo. Cuando la bobina se forma sobre un núcleo de material no magnético como pueden ser la madera o el plástico se conoce como imán con núcleo de aire.</p>
+
+<p>Cuando la bobina se forma alrededor de un material magnético como el hierro o el acero blando se conoce como imán con núcleo de hierro. La utilización de material magnético en el núcleo de la bobina aumenta considerablemente la intensidad del campo magnético. Si el material magnético hace que la intensidad del campo aumente 10 veces diremos que el material magnético tiene una permeabilidad magnética de 10. La permeabilidad es pues una medida de la capacidad de un material para magnetizarse. El número de lineas de fuerza generadas en el interior del núcleo es proporcional al número de amperios-vuelta.</p>
+
+<p>El material del núcleo magnético proporciona una ruta fácil para el flujo de lineas magnéticas de la misma forma que un conductor eléctrico proporciona una ruta fácil para la circulación de la corriente eléctrica.</p>
+
+<p>El aumento de la permeabilidad permite que las lineas de fuerza se concentren en un área más pequeña aumentando la concentración por centímetro cuadrado y aumentando, por tanto, la intensidad del campo magnético.</p>
+
+<p>La figura siguiente muestra el campo magnético creado por un solenoide:</p>
+
+<div align="center"><img src="imagenes/motores/imgMotores07.svg" width="50%"></div>
+
+<p>Podemos definir la inducción magnética como el número de lineas de fuerza del campo magnético por unidad de superficie perpendicular a dichas lineas. En el sistema <strong>C.G.S.</strong> (cegesimal) de unidades cada linea de fuerza representa una unidad. La unidad de inducción es el <strong>Gauss</strong> que se representa como <strong>Gs</strong>. Esto quiere decir que si un campo magnético presenta una inducción de 12000 Gs un centímetro cuadrado del núcleo de ese campo magnético es atravesado perpendicularmente por 12000 lineas de fuerza.</p>
+	
+<p>En el sistema internacional de unidades (<strong>S.I.</strong>) la unidad de inducción es el <strong>Tesla</strong>, que se representa con la letra <strong>T</strong>.</p>
+	
+<p>La equivalencia entre las dos unidades es:</p>
+	
+<p align="center"><math><mn>1</mn><mtext>T</mtext><mo>=</mo><msup><mn>10</mn><mn>4</mn></msup><mtext>Gs</mtext></math></p>
+
+<p>Así podemos calcular la inducción magnética en el interior de un solenoide como:</p>
+
+<p align="center">
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mi>B</mi><mo>=</mo><mi>&mu;</mi>
+  <mrow>
+	  <mfrac>
+		  <mrow><mtext>nI</mtext></mrow>
+		  <mrow><mtext>L</mtext></mrow>
+	  </mfrac>
+  </mrow>
+</math>
+</p>
+
+<p>donde:</p>
+
+<table align="center">
+	<tbody>
+	<tr>
+		<td align="right"><strong>B</strong></td>
+		<td align="center">:</strong></td>
+		<td align="left">Inducción</td>
+		<td align="left">[T]</td>
+	</tr>
+	<tr>
+		<td align="right"><strong>&mu;</strong></td>
+		<td align="center">:</strong></td>
+		<td align="left">Permeabilidad</td>
+		<td align="left"></td>
+	</tr>
+	<tr>
+		<td align="right"><strong>n</strong></td>
+		<td align="center">:</strong></td>
+		<td align="left">Espiras</td>
+		<td align="left"></td>
+	</tr>
+	<tr>
+		<td align="right"><strong>I</strong></td>
+		<td align="center">:</strong></td>
+		<td align="left">Intensidad de corriente</td>
+		<td align="left">[A]</td>
+	</tr>
+	<tr>
+		<td align="right"><strong>L</strong></td>
+		<td align="center">:</strong></td>
+		<td align="left">Longitud del solenoide</td>
+		<td align="left">[m]</td>
+	</tr>
+	</tbody>
+</table>
+
+<p>De la misma forma definimos el <strong>flujo magnético</strong> a través de una superficie como el número total de líneas de fuerza que atraviesan dicha superficie. El flujo magnético se representa por la letra griega &Phi; (fi mayúscula) y podemos expresarlo algebraicamente mediante la siguiente fórmula:</p>
+
+<p align="center">
+<math>
+  <mtext>&Phi;</mtext><mo>=</mo><mtext>B</mtext><mo>·</mo><mtext>s</mtext>
+</math>
+</p>
+
+<p>dónde:</p>
+
+<table align="center">
+	<tbody>
+	<tr>
+		<td align="right"><strong>&Phi;</strong></td>
+		<td align="center">:</strong></td>
+		<td align="left">Flujo magnético</td>
+		<td align="left">[Wb]</td>
+	</tr>
+	<tr>
+		<td align="right"><strong>B</strong></td>
+		<td align="center">:</strong></td>
+		<td align="left">Inducción</td>
+		<td align="left">[T]</td>
+	</tr>
+	<tr>
+		<td align="right"><strong>s</strong></td>
+		<td align="center">:</strong></td>
+		<td align="left">Superficie del solenoide</td>
+		<td align="left">[<math><msup><mtext>m</mtext><mn>2</mn></msup></math>]</td>
+	</tr>
+	</tbody>
+</table>
+
+<p>En el S.I. la unidad del flujo es el <strong>Weber</strong> (<strong>Wb</strong>) y en el C.G.S. el <strong>Maxwell</strong> (<strong>Mx</strong>). La relación entre ambas unidades es 1 Wb = 108 Mx.</p>
+
+<p>Una vez definidas tanto la inducción magnética como el flujo magnético estudiaremos que sucede cuando un conductor por el que circula una corriente eléctrica se sitúa en el interior de un campo magnético.</p>
+
+<div align="center"><img src="imagenes/motores/imgMotores08.svg" width="50%"></div>
+
+<p>Cuando un conductor rectilíneo que es recorrido por una corriente eléctrica se encuentra situado en el interior de un campo magnético perpendicularmente a las líneas de fuerza este se halla sometido a una fuerza cuya dirección y sentido viene dada por la regla de la mano izquierda.</p>
+</div>
+
+<div align="center">
+<div id="container"></div>	
+<script src="js/imgMotores09.js"></script>
+</div>
 
 
+<div class="parrafo">
+<p>Colocando los dedos pulgar, índice y corazón perpendiculares entre sí formando un triedro donde el pulgar representa el movimiento (<strong>F</strong>), el índice la dirección del campo magnético (<strong>B</strong>) y el corazón el sentido de circulación de la corriente eléctrica (<strong>I</strong>) obtenemos el sentido de la fuerza sobre el conductor.</p>
 
+<p>Podemos ahora construir un motor simple con una espira para observar como se generan un par de fuerzas que provocan el movimiento del motor.</p>
+</div>
 
+<div id="imgMotores10"></div>	
+<script src="js/imgMotores10.js"></script>
 
+<div class="parrafo">
+<p>Como se puede observar en la figura y recordando que estamos estudiando los motores asíncronos de corriente alterna, alimentamos el bobinado del estátor con una corriente alterna senoidal de una frecuencia determinada. El bobinado del estátor está rodeando dos piezas polares originando un electroimán en cada una de ellas. El bobinado está realizado de manera que origina dos imanes con los polos enfrentados, de manera que el flujo magnético del campo atraviesa el rotor en dirección norte-sur.</p>
 
+<p>Este flujo magnético es variable, pues es originado por una corriente senoidal. Como sucede en los transformadores, este flujo induce en la espira del rotor una corriente eléctrica que queda situada en el interior del campo magnético.</p>
 
+<p>Si aplicamos la regla de la mano izquierda vemos que sobre los lados activos de la bobina del rotor se originan un par de fuerzas que desplazan la bobina de manera que tiende a orientarse a la posición en la que pasa un mayor flujo magnético por su interior. Al llegar a esta posición las fuerzas creadas sobre la bobina se oponen y la bobina se queda bloqueada y el rotor deja de girar.</p>
 
+<p>Si en lugar de alimentar la máquina con una corriente alterna monofásica lo hacemos con un sistema trifásico de tensiones equilibradas desfasadas entre si 120°cuyas fases alimentan a tres bobinas situadas sobre piezas polares desfasadas entre sí 120&deg; conseguimos originar un campo magnético giratorio que arrastra al rotor a una velocidad inferior a la velocidad del campo magnético (velocidad de sincronismo).</p>
+</div>
 
-
-
-
-
-
-
-
-
-
-<!--
-<object align="center" data="imagenes/motores/imgMotores03.svg" type="image/svg+xml">
+<object align="center" data="imagenes/motores/imgMotores03.svg" type="image/svg+xml" display="block">
 </object>
--->
 
+<div class="parrafo">
+<p>Este campo magnético tiene las siguientes características:</p>
+
+<ol>
+	<li type="disc">El valor del campo magnético es constante.</li>
+	<li type="disc">Su orientación depende del valor instantáneo de las corrientes.</li>
+	<li type="disc">El sentido de giro coincide con la secuencia de fases aplicada. Para cambiar el sentido de giro del 
+		campo magnético y en consecuencia el sentido de giro del motor basta con intercambiar dos fases.</li>
+	<li type="disc">La velocidad de rotación es constante y depende de la frecuencia de la tensión de alimentación y del número 
+		de polos del bobinado inductor del estátor. Este velocidad la denominamos velocidad de sincronismo o velocidad síncrona 
+		(<math><msub><mtext>n</mtext><mn>s</mn></msub></math>) responde a la fórmula:</br>
+		<math display="block">
+			<msub><mtext>n</mtext><mn>s</mn></msub><mo>=</mo>
+			<mfrac>
+				<mrow><mn>60</mn><mtext>f</mtext></mrow>
+				<mrow><mtext>p</mtext></mrow>
+			</mfrac>
+		</math>
+	</li>
+</ol>
+
+<p>Para una frecuencia de red de 50 Hz. obtenemos la siguiente tabla de velocidades para los distintos números de pares de polos (p) habituales en este tipo de motores:</p>
+
+<table align="center">
+	<caption class="tituloTabla"><strong>Tabla 1.</strong> Identificación de terminales</caption>
+	<tbody  class="BordeInferior BordeSuperior Bordedcho"  align="center">
+	<tr>
+		<td class="fondocelda Bordedcho BordeIzdo"><strong>Pares de polos</strong></td>
+		<td class="fondocelda Bordedcho"><strong>Polos</strong></td>
+		<td class="fondocelda Bordedcho"><math><msub><mtext>n</mtext><mn>s</mn></msub></math></td>
+	</tr>
+	<tr class="BordeInferior">
+		<td class="fondocelda Bordedcho BordeIzdo"><strong>(p)</strong></td>
+		<td class="fondocelda Bordedcho"><strong>(2p)</strong></td>
+		<td class="fondocelda Bordedcho"><strong>(rpm)</strong></td>
+	</tr>
+	<tr class="BordeInferior">
+		<td class="Bordedcho BordeIzdo">1</td>
+		<td class="Bordedcho">2</td>
+		<td class="Bordedcho">3000</td>
+	</tr>
+	<tr class="BordeInferior">
+		<td class="Bordedcho BordeIzdo">2</td>
+		<td class="Bordedcho">4</td>
+		<td class="Bordedcho">1500</td>
+	</tr>
+	<tr class="BordeInferior">
+		<td class="Bordedcho BordeIzdo">3</td>
+		<td class="Bordedcho">6</td>
+		<td class="Bordedcho">1000</td>
+	</tr>
+	<tr class="BordeInferior">
+		<td class="Bordedcho BordeIzdo">4</td>
+		<td class="Bordedcho">8</td>
+		<td class="Bordedcho">750</td>
+	</tr>
+	</tbody>
+</table>
+
+<p>El campo magnético giratorio induce en el circuito eléctrico una fuerza electromotriz (f.e.m.) proporcional al flujo inductor y a la frecuencia. Por los conductores del rotor, que se encuentra en cortocircuito, circulará una corriente que, al estar situada en el interior del campo magnético generado por el estátor, se ve sometida a una fuerza F que tiende a hacer girar al rotor en el mismo sentido que el campo magnético y que tiene un valor de:</p>
+
+<math display="block">
+	<mtext>F</mtext><mo>=</mo><mtext>B</mtext><mo>·</mo><mtext>i</mtext><mo>·</mo><mtext>l</mtext>
+</math>
+
+<p>El rotor se mantiene girando a una velocidad n inferior a la velocidad de sincronismo o velocidad del campo magnético. Si el rotor alcanza la velocidad de sincronismo se anula la f.e.m. inducida en el rotor desapareciendo la fuerza que mantiene el rotor girando.</p>
+
+<p>Denominamos deslizamiento a la diferencia de velocidad existente entre el campo magnético y el rotor y viene dada por la expresión:</p>
+
+<p>Habitualmente el deslizamiento viene expresado en valor relativo a la velocidad del campo magnético:</p>
+
+<math display="block">
+	<mtext>s%</mtext><mo>=</mo>
+	<mfrac>
+		<mrow><msub><mtext>n</mtext><mtext>s</mtext></msub><mo>-</mo><mtext>n</mtext></mrow>
+		<mrow><msub><mtext>n</mtext><mtext>s</mtext></msub></mrow>
+	</mfrac>
+	<mo>%</mo>
+</math>
+
+<p>La frecuencia de las corrientes inducidas en el rotor depende del deslizamiento y viene dada por la expresión:</p>
+
+<math display="block">
+	<msub><mtext>f</mtext><mn>1</mn></msub>
+	<mo>=</mo>
+	<mtext>s</mtext><mo>·</mo><mtext>f</mtext>
+</math>
+
+<p>En el caso de disponer de un rotor bobinado podríamos variar el valor de las corrientes inducidas en el rotor, lo que nos permitirá variar tanto el deslizamiento como la intensidad de arranque del motor, proporcionándonos un cierto control tanto sobre la velocidad de giro del motor como sobre la intensidad de arranque. Actualmente estos sistemas de control están en desuso frente a la utilización de los arrancadores suaves o los variadores de frecuencia.</p>
 </div>
 
+
+<div class="parrafo">
+<h1>Variantes de arranque de motores trifásicos asíncronos</h1>
+
+<p>Como ya hemos mencionado el motor asíncrono de inducción presenta una corriente de arranque entre seis y ocho veces la corriente nominal.</p>
+<p>El Reglamento Electrotécnico de Baja Tensión (REBT) establece en la instrucción técnica complementaria 47 (ITC-BT-47) que los motores deben tener limitada la intensidad absorbida en el arranque, cuando pudieran producir efectos que perjudicasen a la instalación u ocasionasen perturbaciones inaceptables al funcionamiento de otros receptores o instalaciones.</p>
+<p>En general, los motores de potencia superior a 0.75 kW deben estar provistos de reostatos de arranque o dispositivos equivalentes que no permitan que la relación de corriente entre el periodo de arranque y el de marcha normal que corresponda a su plena carga, según las características del motor que debe indicar su placa, sea superior a la señalada en el cuadro siguiente:</p>
+
+<table align="center">
+	<caption class="tituloTabla"><strong>Tabla 1.</strong> Identificación de terminales</caption>
+	<tbody  class="BordeInferior BordeSuperior Bordedcho">
+	<tr class="BordeInferior">
+		<td class="fondocelda Bordedcho BordeIzdo"><strong>Potencia nominal del motor</strong></td>
+		<td class="fondocelda Bordedcho"><strong>Constante de proporcionalidad entre la
+			</br>intensidad de la corriente de
+			</br>arranque y la de plena carga</strong></td>
+	</tr>
+	<tr class="BordeInferior">
+		<td class="Bordedcho BordeIzdo">de 0.75 kW a 1.5 kW</td>
+		<td class="Bordedcho">4.5</td>
+	</tr>
+	<tr class="BordeInferior">
+		<td class="Bordedcho BordeIzdo">de 1.5 kW a 5.0 kW</td>
+		<td class="Bordedcho">3</td>
+	</tr>
+	<tr class="BordeInferior">
+		<td class="Bordedcho BordeIzdo">de 5.0 kW a 15 kW</td>
+		<td class="Bordedcho">2</td>
+	</tr>
+	<tr class="BordeInferior">
+		<td class="Bordedcho BordeIzdo">más de 15kW</td>
+		<td class="Bordedcho">1.5</td>
+	</tr>
+	</tbody>
+</table>
+
+<p>Cuando el motor no supere los 0,75 kW o la proporción entre la intensidad de arranque y la de plena carga no supere la constante de la tabla anterior se puede hacer un arranque directo del motor sin ningún dispositivo limitador. En caso contrario deberemos utilizar un sistema que limite la intensidad de arranque, como puede ser un arranque estrella-triángulo (en desuso), un arrancador suave o un variador de velocidad.</p>
+</div>
+
+<div class="parrafo">
+
+<h1>Arranque directo</h1>
+
+<p>Es el método más sencillo para arrancar un motor asíncrono. Los devanados del estator están conectados directamente a la red eléctrica mediante un proceso de con- mutación simple.</p>
+
+<p>El arranque directo crea un estrés térmico en lo devanados del motor y, sólo breve- mente, fuerzas electrodinámicas. Con frecuencia el arranque directo reduce la vida útil de los devanados (por ejemplo en operaciones periódicas intermitentes).</p>
+
+<p>El bloqueo del rotor es uno de los problemas que pueden provocar la destrucción térmica del motor asíncrono. Cada devanado del motor tiene que estar protegido para evitar estos tipos de sobrecargas térmicas.
+Un relé térmico o relé térmico de sobrecarga (-F1) protege al motor de las sobre- cargas débiles y prolongadas, cortocircuitos y pérdidas de fase (ausencia de una fase que hace funcionar el motor como monofásico a dos fases).</p>
+
+<p>Este dispositivo dispone de un mecanismo que permite variar su valor de reglaje adaptándolo al motor que está protegiendo. Una vez que el motor supera este valor de reglaje el relé térmico abre sus contactos de forma brusca y permite enviar una señal que desconecta el circuito de alimentación del motor y activar una señal de alarma.</p>
 </div>
 
 
-
-
-
-
-
-
-
-
-
+<object align="center" data="imagenes/motores/imgMotores11.svg" type="image/svg+xml" display="block">
+</object>
 
 
 
