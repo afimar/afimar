@@ -1,0 +1,226 @@
+<svg version="1.1"
+	baseProfile="full"
+	width="1000" height="1260"
+	xmlns="http://www.w3.org/2000/svg">
+	
+	<script type="text/ecmascript">
+	<![CDATA[
+		var pulsadorON = false;
+		var Temporizador01 = null;
+		var Temporizador02 = null;
+		
+		function KM2ON()
+		{
+			obj = document.getElementById("ContactorKM2R");
+			obj.setAttribute("transform","rotate(0 550 525)");
+			obj = document.getElementById("linea2");
+			obj.setAttribute("transform","translate(6.7,0)");
+			obj = document.getElementById("lineaContactorKM2");
+			obj.setAttribute("stroke-width","3");
+		}
+		
+		function KM3OFF()
+		{
+			obj = document.getElementById("ContactorKM3R");
+			obj.setAttribute("transform","rotate(-15 850 525)");
+			obj = document.getElementById("linea3");
+			obj.setAttribute("transform","translate(-6.7,0)");
+			obj = document.getElementById("lineaContactorKM3");
+			obj.setAttribute("stroke-width","1");
+			if (!Temporizador02)
+			{
+				Temporizador02 = setTimeout(KM2ON, 500);
+			}
+		}
+		
+		function funcionEstrella()
+		{
+			if (pulsadorON==false){
+				pulsadorON = true;
+				obj = document.getElementById("PulsadorON");
+				obj.setAttribute("opacity","1");
+				obj = document.getElementById("PulsadorOFF");
+				obj.setAttribute("opacity","0.3");
+				obj = document.getElementById("ContactorKM1R");
+				obj.setAttribute("transform","rotate(0 250 525)");
+				obj = document.getElementById("linea1");
+				obj.setAttribute("transform","translate(6.7,0)");
+				obj = document.getElementById("ContactorKM3R");
+				obj.setAttribute("transform","rotate(0 250 525)");
+				obj = document.getElementById("linea3");
+				obj.setAttribute("transform","translate(6.7,0)");
+				obj = document.getElementById("rotor");
+				obj.setAttribute("fill","lightgray");
+				obj = document.getElementById("lineaPrincipal");
+				obj.setAttribute("stroke-width","3");
+				obj = document.getElementById("lineaContactorKM3");
+				obj.setAttribute("stroke-width","3");
+				if (!Temporizador01)
+				{
+					Temporizador01 = setTimeout(KM3OFF, 3000);
+				}
+			}
+		}
+		
+		function funcionOFF()
+		{
+			pulsadorON = false;
+			if(Temporizador01)  
+			{
+				clearTimeout(Temporizador01);
+				Temporizador01 = null;
+			}
+			if(Temporizador02)  
+			{
+				clearTimeout(Temporizador02);
+				Temporizador02 = null;
+			}
+			
+			obj = document.getElementById("PulsadorON");
+			obj.setAttribute("opacity","0.3");
+			obj = document.getElementById("PulsadorOFF");
+			obj.setAttribute("opacity","1");
+			obj = document.getElementById("ContactorKM1R");
+			obj.setAttribute("transform","rotate(-15 250 525)");
+			obj = document.getElementById("linea1");
+			obj.setAttribute("transform","translate(-6.7,0)");
+			obj = document.getElementById("ContactorKM2R");
+			obj.setAttribute("transform","rotate(-15 550 525)");
+			obj = document.getElementById("linea2");
+			obj.setAttribute("transform","translate(-6.7,0)");
+			obj = document.getElementById("ContactorKM3R");
+			obj.setAttribute("transform","rotate(-15 850 525)");
+			obj = document.getElementById("linea3");
+			obj.setAttribute("transform","translate(-6.7,0)");
+			obj = document.getElementById("rotor");
+			obj.setAttribute("fill","white");
+			obj = document.getElementById("lineaPrincipal");
+			obj.setAttribute("stroke-width","1");
+			obj = document.getElementById("lineaContactorKM3");
+			obj.setAttribute("stroke-width","1");
+			obj = document.getElementById("lineaContactorKM2");
+			obj.setAttribute("stroke-width","1");
+		}
+	]]>
+	</script>
+	<!--Linea de alimentación-->
+	<path d="m 50 50 l 400 0 m -400 50 l 400 0 m -400 50 l 400 0" stroke="black" stroke-width="1" fill="none"/>;
+	<!--Linea de Principal-->
+	<circle cx="250" cy="50" r="5" stroke="none" fill="black"/>;
+	<circle cx="300" cy="100" r="5" stroke="none" fill="black"/>;
+	<circle cx="350" cy="150" r="5" stroke="none" fill="black"/>;
+	<g id="lineaPrincipal" stroke="black" stroke-width="1" fill="none">
+		<path d="m 250 50  l 0 425 m 0 50 l 0 50 m 0 50 l 0 350 l 400 0 l 0 -350"/>;
+		<path d="m 300 100 l 0 375 m 0 50 l 0 50 m 0 50 l 0 300 l 300 0 l 0 -250"/>;
+		<path d="m 350 150 l 0 325 m 0 50 l 0 50 m 0 50 l 0 250 l 200 0 l 0 -150"/>;
+	</g>
+	<!--Linea del contactor KM2-->
+	<circle cx="250" cy="325" r="5" stroke="none" fill="black"/>;
+	<circle cx="300" cy="375" r="5" stroke="none" fill="black"/>;
+	<circle cx="350" cy="425" r="5" stroke="none" fill="black"/>;
+	<g id="lineaContactorKM2" stroke="black" stroke-width="1" fill="none">
+		<path d="m 250 325 l 400 0 l 0 150 m 0 50 l 0 100"/>;
+		<path d="m 300 375 l 300 0 l 0 100 m 0 50 l 0 150"/>;
+		<path d="m 350 425 l 200 0 l 0 50  m 0 50 l 0 200"/>;
+	</g>
+	<!--Linea del contactor KM3-->
+	<circle cx="550" cy="725" r="5" stroke="none" fill="black"/>;
+	<circle cx="600" cy="675" r="5" stroke="none" fill="black"/>;
+	<circle cx="650" cy="625" r="5" stroke="none" fill="black"/>;
+	<g id="lineaContactorKM3" stroke="black" stroke-width="1" fill="none">
+		<path d="m 550 725 l 400 0 l 0 -200 m 0 -50 l 0 -50 l -50 0"/>;
+		<path d="m 600 675 l 300 0 l 0 -150 m 0 -50 l 0 -50"/>;
+		<path d="m 650 625 l 200 0 l 0 -100 m 0 -50 l 0 -50 l 50 0"/>;
+	</g>
+	<circle cx="900" cy="425" r="5" stroke="none" fill="black"/>;
+	<!--Fusibles-->
+	<g id="F1FR">
+		<rect x="238.75" y="200" width="22.5" height="75" stroke="black" stroke-width="1" fill="none"/>;
+	</g>
+	<use href = "#F1FR" x="50" y="0"/>;
+	<use href = "#F1FR" x="100" y="0"/>;
+	<!--Contactor KM1-->	
+	<g id="KM1R">
+		<path d="M250 525 l 0 -60" stroke="black" stroke-width="1" fill="none" transform="rotate(-15 250 525)" id="ContactorKM1R"/>;
+	</g>
+	<use href = "#KM1R" x="50" y="0"/>;
+	<use href = "#KM1R" x="100" y="0"/>;
+	<!--Desfase horizontal de la linea de puntos = 250 - 25 * tan ( 15*pi()/180 ) 
+		Desfase vertical (700-25) -->
+	<path stroke = 'black' stroke-width = '1' fill = 'none'  stroke-dasharray='10 5' d = 'M 243.301 500 l 100 0' id="linea1"/>;
+	<!--Contactor KM2-->	
+	<g id="KM2R">
+		<path d="M550 525 l 0 -60" stroke="black" stroke-width="1" fill="none" transform="rotate(-15 550 525)" id="ContactorKM2R"/>;
+	</g>
+	<use href = "#KM2R" x="50" y="0"/>;
+	<use href = "#KM2R" x="100" y="0"/>;
+	<!--Desfase horizontal de la linea de puntos = 550 - 25 * tan ( 15*pi()/180 ) 
+		Desfase vertical (700-25) -->
+	<path stroke = 'black' stroke-width = '1' fill = 'none'  stroke-dasharray='10 5' d = 'M 543.301 500 l 100 0' id="linea2"/>;
+	<!--Contactor KM3-->	
+	<g id="KM3R">
+		<path d="M850 525 l 0 -60" stroke="black" stroke-width="1" fill="none" transform="rotate(-15 850 525)" id="ContactorKM3R"/>;
+	</g>
+	<use href = "#KM3R" x="50" y="0"/>;
+	<use href = "#KM3R" x="100" y="0"/>;
+	<!--Desfase horizontal de la linea de puntos = 85 - 25 * tan ( 15*pi()/180 ) 
+		Desfase vertical (700-25) -->
+	<path stroke = 'black' stroke-width = '1' fill = 'none'  stroke-dasharray='10 5' d = 'M 843.301 500 l 100 0' id="linea3"/>;
+	<!--Guardamotor-->
+	<g id="F2FR">
+		<path d="m 250 575 l 0 12.5 l 25  0 l 0 25 l -25 0 l 0 12.5" stroke="black" stroke-width="1" fill="none"/>;
+	</g>
+	<use href = "#F2FR" x="50" y="0"/>;
+	<use href = "#F2FR" x="100" y="0"/>;
+	<path d="m 200 575 l 200 0 l 0 50 l -200 0 Z" stroke="black" stroke-width="1" fill="none" stroke-dasharray="10 5"/>;
+	<g id="motor">
+		<!--Motor Jaula de Ardilla-->
+		<circle id="rotor" cx="300" cy="775" r="75" stroke="black" stroke-width="1" fill="white"/>;
+		<!--Desfase vertical del texto y = 775 +/- 0.6 * 18  (1,2 em)-->
+		<text x="300" y="764.2" style="text-anchor:middle" font-family="sans-serif" dominant-baseline = "middle" font-size = "18px">M</text>;
+		<text x="300" y="792.4" style="text-anchor:middle" font-family="sans-serif" dominant-baseline = "middle" font-size = "18px">3&#126;</text>;
+		<animateTransform
+		       attributeName="transform"
+		       begin="PulsadorON.click"
+			   end="PulsadorOFF.click" 
+		       dur="5s"
+		       type="rotate"
+		       from="0 300 775"
+		       to="360 300 775"
+		       repeatCount="indefinite"
+		/>
+	</g>
+	<!--Denominaciones-->
+	<text x="50" y="50" style="text-anchor:end" font-family='sans-serif' dominant-baseline = 'middle' font-size = '18px'>L1</text>;
+	<text x="50" y="100" style="text-anchor:end" font-family='sans-serif' dominant-baseline = 'middle' font-size = '18px'>L2</text>;
+	<text x="50" y="150" style="text-anchor:end" font-family='sans-serif' dominant-baseline = 'middle' font-size = '18px'>L3</text>;
+	<text x="365" y="237" style="text-anchor:start" font-family='sans-serif' dominant-baseline = 'middle' font-size = '18px'>F1F</text>;
+	<text x="405" y="600" style="text-anchor:start" font-family='sans-serif' dominant-baseline = 'middle' font-size = '18px'>F2F</text>;
+	<text x="355" y="500" style="text-anchor:start" font-family='sans-serif' dominant-baseline = 'middle' font-size = '18px'>KM1</text>;
+	<text x="655" y="500" style="text-anchor:start" font-family='sans-serif' dominant-baseline = 'middle' font-size = '18px'>KM2</text>;
+	<text x="955" y="500" style="text-anchor:start" font-family='sans-serif' dominant-baseline = 'middle' font-size = '18px'>KM3</text>;
+	<text x="255" y="690" style="text-anchor:start" font-family='sans-serif' dominant-baseline = 'middle' font-size = '18px'>U1</text>;
+	<text x="305" y="690" style="text-anchor:start" font-family='sans-serif' dominant-baseline = 'middle' font-size = '18px'>V1</text>;
+	<text x="355" y="690" style="text-anchor:start" font-family='sans-serif' dominant-baseline = 'middle' font-size = '18px'>W1</text>;
+	<text x="255" y="860" style="text-anchor:start" font-family='sans-serif' dominant-baseline = 'middle' font-size = '18px'>W2</text>;
+	<text x="305" y="860" style="text-anchor:start" font-family='sans-serif' dominant-baseline = 'middle' font-size = '18px'>U2</text>;
+	<text x="355" y="860" style="text-anchor:start" font-family='sans-serif' dominant-baseline = 'middle' font-size = '18px'>V2</text>;
+	<!--Pulsador OFF-->
+	<circle onclick = "funcionOFF()" id = "PulsadorOFF" cx="100" cy="300" r="20" stroke="none" fill="red"/>;
+	<circle cx="100" cy="300" r="25" stroke="black" stroke-width="1" fill="none"/>;
+	<!--Pulsador ON-->
+	<circle onclick = "funcionEstrella()" id = "PulsadorON" cx="100" cy="400" r="20" stroke="none" fill="green" opacity="0.3"/>;
+	<circle cx="100" cy="400" r="25" stroke="black" stroke-width="1" fill="none"/>;
+</svg>
+
+
+
+
+
+
+
+
+
+
+
+

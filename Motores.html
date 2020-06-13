@@ -92,7 +92,7 @@
 		<li type="disc">Elevado par de arranque (0.8 a dos veces el par nominal) con un par máximo de 2 a 3 mayor que el par nominal lo que 
 		permite puntas de carga y sobrecargas muy elevadas.</li>
 		<li type="disc">Rendimiento y factor de potencia elevados (0.85). Velocidad de giro poco variable con la carga.</li>
-		<li type="disc">Como desventajas de este tipo de motores figuraban una corriente de arranque ele- vada (4 a 8 veces la nominal) y una 
+		<li type="disc">Como desventajas de este tipo de motores figuraban una corriente de arranque elevada (4 a 8 veces la nominal) y una 
 		difícil variación de la velocidad de giro, desventajas que con la irrupción de la electrónica de potencia han quedado obsoletas.</li>
 	</ol>
 
@@ -132,7 +132,7 @@
 
 <p>Integrada en la carcasa del motor en la parte lateral o superior de este (según la forma constructiva) existe una caja en cuyo interior se aloja una placa de cerámica o baquelita que da soporte a los bornes de conexión de la máquina. A estos bornes van conectados los seis terminales de las tres bobinas que integran el estator. En el caso de rotor bobinado la caja de bornes dispondrá de de tres terminales a mayores correspondientes a las conexiones del devanado rotórico. Mediante esta caja se da entonces acceso desde el exterior a los circuitos eléctricos internos del motor.</p>
 
-<p>La norma <strong>IEC 60034-8</strong> (International Electrotechnical Commission) que tambien suele aparecer con sus siglas en inglés (Comisión Electrotécnica Internacional) y su equivalente <strong>UNE-EN 60034-8</strong> (Una Norma Española - Norma Europea) indica la disposición de los bornes en la baquelita para poder conectar las bobinas del estator en estrella o en triángulo según corresponda.</p>
+<p>La norma <strong>IEC 60034-8</strong> (International Electrotechnical Commission) que también suele aparecer con sus siglas en inglés (Comisión Electrotécnica Internacional) y su equivalente <strong>UNE-EN 60034-8</strong> (Una Norma Española - Norma Europea) indica la disposición de los bornes en la baquelita para poder conectar las bobinas del estator en estrella o en triángulo según corresponda.</p>
 
 <p>Los devanados de cada una de las fases se denominarán con las letras <strong>U</strong>, <strong>V</strong>, <strong>W</strong> seguido del número <strong>1</strong> si se corresponde a la entrada de la bobina o <strong>2</strong> si se trata del terminal de salida de la misma.</p>
 
@@ -1004,10 +1004,36 @@ Un relé térmico o relé térmico de sobrecarga (-F1) protege al motor de las s
 <p>Este dispositivo dispone de un mecanismo que permite variar su valor de reglaje adaptándolo al motor que está protegiendo. Una vez que el motor supera este valor de reglaje el relé térmico abre sus contactos de forma brusca y permite enviar una señal que desconecta el circuito de alimentación del motor y activar una señal de alarma.</p>
 </div>
 
+<div class="parrafo">
+	<object align="center" data="imagenes/motores/imgMotores11.svg" type="image/svg+xml" display="block">
+	</object>
+</div>
 
-<object align="center" data="imagenes/motores/imgMotores11.svg" type="image/svg+xml" display="block">
-</object>
+<div class="parrafo">
+	
+<h1>Arranque estrella-triángulo</h1>
 
+<p>Un arranque de motor estrella-triángulo implica la anulación de los puentes de la caja de bornes realizando las seis conexiones de los devanados del estator externamente mediante el mando manual o automático de los contactores, tal y como muestra el circuito de fuerza de la siguiente figura.</p>
+
+<p>Durante el funcionamiento normal del motor este está conectado en triángulo, por tanto, para una tensión de red de 400 V en la placa de características del motor tendrá que aparecer una tensión nominal de funcionamiento de <math><mn>400</mn><mo>/</mo><mn>690</mn><mtext> V &Delta;/&Gamma;</mtext></math> 400/690 V △/Y.</p>
+
+<p>Recordando el funcionamiento de las conexiones estrella y triángulo de un sistema trifásico sabemos que al conectar el motor en estrella los bobinados del estator quedan alimentados a <math><mn>1</mn><mo>/</mo><msqrt><mn>3</mn></msqrt></math> veces la tensión de la conexión en triángulo y la intensidad que circula por ellos queda reducida también en una tercera parte (<math><mn>1</mn><mo>/</mo><mn>3</mn></math>).</p>
+
+<p>Considerando que la intensidad típica de arranque de un motor asíncrono trifásico oscila entre 2 y 2.5 veces la intensidad nominal. Aplicando las leyes de proporcionalidad vemos que el motor en estrella consume entre 6 y 7,5 veces menos intensidad en el arranque que el motor conectado en estrella.</p>
+
+<p>Debido a la reducción de tensión e intensidad en los bornes del motor el par de arranque en la configuración en estrella hace que el par de arranque del motor también se vea reducido por lo que esta configuración es apropiada para aparatos con un par de carga bajo o aquellas en las que el par de arranque aumenta con la velocidad (ventiladores, extractores...)</p>
+
+<p>En el momento de la transición estrella-triángulo la intensidad en las bobinas del motor cae a 0 amperios y la velocidad se reduce rápidamente en la función de la carga. El paso a triángulo provoca un aumento prácticamente instantáneo tanto de la intensidad consumida como del par generado por el motor.</p>
+
+<div class="parrafo">
+	<object align="center" data="imagenes/motores/imgMotores12.svg" type="image/svg+xml" display="block">
+	</object>
+</div>
+
+<div class="parrafo">
+
+
+</div>
 
 
 
