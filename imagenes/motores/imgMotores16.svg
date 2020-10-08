@@ -1,0 +1,64 @@
+<svg version="1.1"
+	baseProfile="full"
+	xmlns="http://www.w3.org/2000/svg"
+	width="1000" height="320" xml:space="preserve"
+	onload="init(evt)">
+	
+	
+	
+	<script type="text/ecmascript">
+	<![CDATA[
+		var pulsadorON = false;
+		var Temporizador01 = null;
+		var Temporizador02 = null;
+		
+		
+		
+		
+		function funcionOFF()
+		{
+			pulsadorON = false;
+			if(Temporizador01)  
+			{
+				clearTimeout(Temporizador01);
+				Temporizador01 = null;
+			}
+			if(Temporizador02)  
+			{
+				clearTimeout(Temporizador02);
+				Temporizador02 = null;
+			}
+			
+			
+			
+			obj = document.getElementById("lineaPrincipal");
+			obj.setAttribute("stroke-width","1");
+			obj = document.getElementById("lineaContactorKM3");
+			obj.setAttribute("stroke-width","1");
+			obj = document.getElementById("lineaContactorKM2");
+			obj.setAttribute("stroke-width","1");
+		}
+	]]>
+	</script>
+	
+	
+	
+	
+	
+	
+	
+	<!--Función seno-->
+	<path d="M 0 160 l 1000 0" stroke="black" stroke-width="1" fill="none"/>;
+	
+
+</svg>
+
+
+
+
+
+
+
+
+
+

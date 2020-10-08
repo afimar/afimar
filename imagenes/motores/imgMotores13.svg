@@ -1,0 +1,79 @@
+<svg version="1.1"
+	baseProfile="full"
+	xmlns="http://www.w3.org/2000/svg"
+	width="600" height="700" xml:space="preserve">
+	<!--Cuadrícula horizontal-->
+	<g id = "cuadriculaVertical" stroke="lightgray" stroke-width="1" fill="none">
+		<path d="m 50 50 l 460 0"/>;
+		<path d="m 50 110 l 460 0"/>;
+		<path d="m 50 170 l 460 0"/>;
+		<path d="m 50 230 l 460 0"/>;
+		<path d="m 50 290 l 460 0"/>;
+		<path d="m 50 350 l 460 0"/>;
+		<path d="m 50 410 l 460 0"/>;
+		<path d="m 50 470 l 460 0"/>;
+		<path d="m 50 530 l 460 0"/>;
+		<path d="m 50 590 l 460 0"/>;
+		<path d="m 50 650 l 460 0"/>;
+	</g>
+	<text x="45" y="590" fill="lightgray" style="text-anchor:end" dominant-baseline = "middle" font-family="sans-serif" font-size = "18px">1</text>;
+	<text x="45" y="530" fill="lightgray" style="text-anchor:end" dominant-baseline = "middle" font-family="sans-serif" font-size = "18px">2</text>;
+	<text x="45" y="470" fill="lightgray" style="text-anchor:end" dominant-baseline = "middle" font-family="sans-serif" font-size = "18px">3</text>;
+	<text x="45" y="410" fill="lightgray" style="text-anchor:end" dominant-baseline = "middle" font-family="sans-serif" font-size = "18px">4</text>;
+	<text x="45" y="350" fill="lightgray" style="text-anchor:end" dominant-baseline = "middle" font-family="sans-serif" font-size = "18px">5</text>;
+	<text x="45" y="290" fill="lightgray" style="text-anchor:end" dominant-baseline = "middle" font-family="sans-serif" font-size = "18px">6</text>;
+	<text x="45" y="230" fill="lightgray" style="text-anchor:end" dominant-baseline = "middle" font-family="sans-serif" font-size = "18px">7</text>;
+	<text x="45" y="170" fill="lightgray" style="text-anchor:end" dominant-baseline = "middle" font-family="sans-serif" font-size = "18px">8</text>;
+	<text x="45" y="110" fill="lightgray" style="text-anchor:end" dominant-baseline = "middle" font-family="sans-serif" font-size = "18px">9</text>;
+	<text x="45" y="50" fill="lightgray" style="text-anchor:end" dominant-baseline = "middle" font-family="sans-serif" font-size = "18px">10</text>;
+	<!--Cuadrícula Vertical-->
+	<g id = "cuadriculaVertical" stroke="lightgray" stroke-width="1" fill="none">
+		<path d="m 50 50 l 0 600"/>;
+		<path d="m 96 50 l 0 600"/>;
+		<path d="m 142 50 l 0 600"/>;
+		<path d="m 188 50 l 0 600"/>;
+		<path d="m 234 50 l 0 600"/>;
+		<path d="m 280 50 l 0 600"/>;
+		<path d="m 326 50 l 0 600"/>;
+		<path d="m 372 50 l 0 600"/>;
+		<path d="m 418 50 l 0 600"/>;
+		<path d="m 464 50 l 0 600"/>;
+		<path d="m 510 50 l 0 600"/>;
+	</g>
+	<text x="142" y="655" fill="lightgray" style="text-anchor:middle" dominant-baseline = "hanging" font-family="sans-serif" font-size = "18px">0,2</text>;
+	<text x="234" y="655" fill="lightgray" style="text-anchor:middle" dominant-baseline = "hanging" font-family="sans-serif" font-size = "18px">0,4</text>;
+	<text x="326" y="655" fill="lightgray" style="text-anchor:middle" dominant-baseline = "hanging" font-family="sans-serif" font-size = "18px">0,6</text>;
+	<text x="418" y="655" fill="lightgray" style="text-anchor:middle" dominant-baseline = "hanging" font-family="sans-serif" font-size = "18px">0,8</text>;
+	<text x="510" y="655" fill="lightgray" style="text-anchor:middle" dominant-baseline = "hanging" font-family="sans-serif" font-size = "18px">1</text>;
+	<!--Arranque directo-->
+	<g id = "arranqueDirecto" stroke="red" stroke-width="2" fill="none">
+		<path d = "M 50 50 Q 234 50 336 170"/>;
+		<path d = "M 336 170 Q 387.5 230 418 290"/>;
+		<path d = "M 418 290 Q 510 470 510 590"/>;
+	</g>
+	<!--Arranque estrella-->
+	<g id = "arranqueEstrella" stroke="blue" stroke-width="2" fill="none">
+		<path d = "M 50 290 Q 142 290 280 330"/>;
+		<path d = "M 280 330 Q 378.6 358.6 418 410"/>;
+		<path d = "M 418 410 Q 510 530 510 590"/>;
+	</g>
+	<!--Arranque estrella-triángulo-->
+	<g id = "arranqueEstrella" stroke="black" stroke-width="3" fill="none">
+		<path d = "M 50 290 Q 142 290 280 330"/>;
+		<path d = "M 280 330 Q 378.6 358.6 418 410"/>;
+		<path d = "M 418 410 L 418 290"/>;
+		<path d = "M 418 290 Q 510 470 510 590"/>;
+	</g>
+</svg>
+
+
+
+
+
+
+
+
+
+
+
+

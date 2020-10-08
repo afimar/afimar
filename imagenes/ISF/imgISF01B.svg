@@ -1,0 +1,26 @@
+<svg version="1.1"
+	baseProfile="full"
+	width="950" height="90"
+	viewBox = "0 0 950 90"
+	xmlns="http://www.w3.org/2000/svg">
+	<!-- Tabla -->
+	<rect x="20" y="20" width="130" height="50" fill="yellowgreen" stroke="black" stroke-width="2" rx="10" ry="10"/>
+	<rect x="150" y="20" width="130" height="50" fill="white" stroke="black" stroke-width="2" rx="10" ry="10"/>
+	<rect x="280" y="20" width="130" height="50" fill="white" stroke="black" stroke-width="2" rx="10" ry="10"/>
+	<rect x="410" y="20" width="130" height="50" fill="white" stroke="black" stroke-width="2" rx="10" ry="10"/>
+	<rect x="540" y="20" width="130" height="50" fill="white" stroke="black" stroke-width="2" rx="10" ry="10"/>
+	<rect x="670" y="20" width="130" height="50" fill="white" stroke="black" stroke-width="2" rx="10" ry="10"/>
+	<rect x="800" y="20" width="130" height="50" fill="white" stroke="black" stroke-width="2" rx="10" ry="10"/>
+	<!-- Texto -->
+	<text x="85" y="45" font-family="sans-serif">
+		<tspan dy="-0.75em" dominant-baseline="middle" text-anchor="middle">Electricidad</tspan>
+		<tspan x="85" dy="1.5em" dominant-baseline="middle" text-anchor="middle">básica</tspan>
+	</text>
+	<text x = "215" y = "45" style="font-family: sans-serif; dominant-baseline: middle; text-anchor: middle">Salud</text>
+	<text x = "345" y = "45" style="font-family: sans-serif; dominant-baseline: middle; text-anchor: middle">Turismo-Ocio</text>
+	<text x = "475" y = "45" style="font-family: sans-serif; dominant-baseline: middle; text-anchor: middle">Comunicaciones</text>
+	<text x = "605" y = "45" style="font-family: sans-serif; dominant-baseline: middle; text-anchor: middle">Transporte</text>
+	<text x = "735" y = "45" style="font-family: sans-serif; dominant-baseline: middle; text-anchor: middle">Iluminación</text>
+	<text x = "865" y = "45" style="font-family: sans-serif; dominant-baseline: middle; text-anchor: middle">Agua</text>
+</svg>
+

@@ -29,6 +29,7 @@
 		<li><a href="medidas.html">Técnicas de medida</a></li>
 		<li><a class="active" href="maquinas.html">Máquinas eléctricas</a></li>
 		<li><a href="ED.html">Circuitos electrónicos</a></li>
+		<li><a href="ISF.html">ISF</a></li>
 	</ul>
 </nav>
 
@@ -39,7 +40,6 @@
 	</ul>
 </nav>
 </div>
-
 
 
 <div class="parrafo">
@@ -1015,7 +1015,12 @@ Un relé térmico o relé térmico de sobrecarga (-F1) protege al motor de las s
 
 <p>Un arranque de motor estrella-triángulo implica la anulación de los puentes de la caja de bornes realizando las seis conexiones de los devanados del estator externamente mediante el mando manual o automático de los contactores, tal y como muestra el circuito de fuerza de la siguiente figura.</p>
 
-<p>Durante el funcionamiento normal del motor este está conectado en triángulo, por tanto, para una tensión de red de 400 V en la placa de características del motor tendrá que aparecer una tensión nominal de funcionamiento de <math><mn>400</mn><mo>/</mo><mn>690</mn><mtext> V &Delta;/&Gamma;</mtext></math> 400/690 V △/Y.</p>
+<div class="parrafo">
+	<object align="center" width="100%" height="auto" data="imagenes/motores/imgMotores12.svg" type="image/svg+xml" display="block">
+	</object>
+</div>
+
+<p>Durante el funcionamiento normal del motor este está conectado en triángulo, por tanto, para una tensión de red de 400 V en la placa de características del motor tendrá que aparecer una tensión nominal de funcionamiento de <math><mn>400</mn><mo>/</mo><mn>690</mn><mtext> V &Delta;/&Gamma;</mtext></math></p>
 
 <p>Recordando el funcionamiento de las conexiones estrella y triángulo de un sistema trifásico sabemos que al conectar el motor en estrella los bobinados del estator quedan alimentados a <math><mn>1</mn><mo>/</mo><msqrt><mn>3</mn></msqrt></math> veces la tensión de la conexión en triángulo y la intensidad que circula por ellos queda reducida también en una tercera parte (<math><mn>1</mn><mo>/</mo><mn>3</mn></math>).</p>
 
@@ -1025,10 +1030,40 @@ Un relé térmico o relé térmico de sobrecarga (-F1) protege al motor de las s
 
 <p>En el momento de la transición estrella-triángulo la intensidad en las bobinas del motor cae a 0 amperios y la velocidad se reduce rápidamente en la función de la carga. El paso a triángulo provoca un aumento prácticamente instantáneo tanto de la intensidad consumida como del par generado por el motor.</p>
 
-<div class="parrafo">
-	<object align="center" data="imagenes/motores/imgMotores12.svg" type="image/svg+xml" display="block">
-	</object>
-</div>
+<div align="center"><img src="imagenes/motores/imgMotores13.svg"></div>
+
+<P>La transición automática de estrella a triángulo se realiza mediante un relé temporizado con el contactor de linea. Es tiempo requerido para el arranque en estrella depende de la carga y no debe realizarse hasta que el motor alcanza entre el 75% y el 80% de su velocidad normal de funcionamiento para garantizar el correcto funcionamiento después de la transición a triángulo.</p>
+	
+<p>La elección de componentes para la conexión del motor se realizará en concordancia con la intensidad nominal del motor. Así tanto el contactor principal «<strong>KM1</strong>» como el relé térmico «<strong>F2F</strong>» se establecerán en relación <math><mn>1</mn><mo>/</mo><msqrt><mn>3</mn></msqrt></math> veces la intensidad nominal del motor (ambos están conectados en serie con los devanados del motor donde circula la intensidad de fase). El contactor de cambio a triángulo «<strong>KM2</strong>» tendrá la misma constante de proporcionalidad que los anteriores mientras que el contactor de la conexión estrella «<strong>KM1</strong>» estará calibrado para funcionar con 1/3 de la intensidad nominal del motor.</p>
+
+
+<h1>Arrancador suave</h1>
+
+<p>A partir del desarrollo de la llamada electrónica de potencia aparecieron soluciones alternativas a los arranques tradicionales de motores eléctricos que permiten un mayor control sobre las curvas de funcionamiento del motor.</p>
+
+<p>El arrancador suave permite un control continuo y lineal sobre la tensión de alimentación del motor que se incrementa desde una tensión inicial (expresada en tanto por ciento de la tensión nominal) hasta el 100 % de dicha en una rampa de aceleración cuyo tiempo de duración determinado.</p>
+
+<p>Tanto el tiempo de aceleración como el porcentaje inicial de tensión que se le aplicará al motor pueden ser controlados mediante sendos selectores que incorporan estos arrancadores también denominados «<strong>soft starter</strong>».</p>
+
+<div align="center"><img src="imagenes/motores/imgMotores14.svg"></div>
+
+<p>La tensión del motor se controla mediante el ángulo de disparo de dos tiristores en antiparalelo situados en cada fase de alimentación del motor. Un tiristor controla el semiciclo positivo de la onda de entrada y el otro el semiciclo negativo.</p>
+
+<div align="center"><img src="imagenes/motores/imgMotores15.svg"></div>
+
+<p>Cuando el motor alcanza la tensión nominal los tiristores permiten el paso completo de la onda de alimentación por lo que se les puede hacer un «bypass» mediante unos contactores de bypass que permiten desconectar a los tiristores.</p>
+
+<p>El arrancador suave permite también una rampa de parada del motor reduciendo progresivamente la tensión durante el proceso de parada del motor.</p>
+
+<p>Cabe recordar que reduciendo la tensión de alimentación del motor se reduce también la intensidad consumida por éste y también el par motor, que se reduce de forma cuadrática a la tensión de alimentación del motor.</p>
+<p>Por ejemplo, si iniciamos la rampa en un 40% de la tensión nominal reducimos la tensión las <math><mn>2</mn><mo>/</mo><mn>5</mn></math> partes, es decir, el par quedará reducido en aproximadamente en <math><msup><mrow><mn>2</mn><mo>/</mo><mn>5</mn></mrow><mn>2</mn></msup><mo>=</mo><mn>4</mn><mo>/</mo><mn>25</mn></math>, es decir, un 16 %.</p>
+
+<p>Por otro lado, el tiempo ajustado en la rampa de aceleración (t-Start) no es el tiempo de aceleración real de la máquina, este tiempo es simplemente el tiempo que tarda la tensión de alimentación del motor en alcanzar su valor nominal. El tiempo real de aceleración del motor depende tanto del par de arranque del motor como de la carga a la que está sometido.</p>
+
+
+<div align="center"><img src="imagenes/motores/imgMotores16.svg"></div>
+
+
 
 <div class="parrafo">
 
