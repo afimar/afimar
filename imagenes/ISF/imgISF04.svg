@@ -1,0 +1,212 @@
+<svg version="1.1"
+	baseProfile="full"
+	width="1200" height="620"
+	viewBox = "0 0 1200 620"
+	xmlns="http://www.w3.org/2000/svg">
+	<script type="text/ecmascript">
+	<![CDATA[
+		function todoOFF()
+		{
+			obj = document.getElementById("textoReplanteo");
+			obj.setAttribute("fill","none");
+			obj = document.getElementById("textoMontaje");
+			obj.setAttribute("fill","none");
+			obj = document.getElementById("textoMantenimiento");
+			obj.setAttribute("fill","none");
+			obj = document.getElementById("textoVigilancia");
+			obj.setAttribute("fill","none");
+			obj = document.getElementById("textoPrevencion");
+			obj.setAttribute("fill","none");
+			obj = document.getElementById("textoCorreccion");
+			obj.setAttribute("fill","none");
+		}
+		
+		function replanteoON()
+		{
+			obj = document.getElementById("textoReplanteo");
+			obj.setAttribute("fill","#606060");
+			obj = document.getElementById("textoMontaje");
+			obj.setAttribute("fill","none");
+			obj = document.getElementById("textoMantenimiento");
+			obj.setAttribute("fill","none");
+		}
+		
+		function montajeON()
+		{
+			obj = document.getElementById("textoReplanteo");
+			obj.setAttribute("fill","none");
+			obj = document.getElementById("textoMontaje");
+			obj.setAttribute("fill","#606060");
+			obj = document.getElementById("textoMantenimiento");
+			obj.setAttribute("fill","none");
+		}
+		function mantenimientoON()
+		{
+			obj = document.getElementById("textoReplanteo");
+			obj.setAttribute("fill","none");
+			obj = document.getElementById("textoMontaje");
+			obj.setAttribute("fill","none");
+			obj = document.getElementById("textoMantenimiento");
+			obj.setAttribute("fill","#606060");
+		}
+		function vigilanciaON()
+		{
+			obj = document.getElementById("textoVigilancia");
+			obj.setAttribute("fill","#606060");
+			obj = document.getElementById("textoPrevencion");
+			obj.setAttribute("fill","none");
+			obj = document.getElementById("textoCorreccion");
+			obj.setAttribute("fill","none");
+		}
+		function prevencionON()
+		{
+			obj = document.getElementById("textoVigilancia");
+			obj.setAttribute("fill","none");
+			obj = document.getElementById("textoPrevencion");
+			obj.setAttribute("fill","#606060");
+			obj = document.getElementById("textoCorreccion");
+			obj.setAttribute("fill","none");
+		}
+		function correccionON()
+		{
+			obj = document.getElementById("textoVigilancia");
+			obj.setAttribute("fill","none");
+			obj = document.getElementById("textoPrevencion");
+			obj.setAttribute("fill","none");
+			obj = document.getElementById("textoCorreccion");
+			obj.setAttribute("fill","#606060");
+		}
+	]]>
+	</script>
+	<!-- Fases de desarrollo -->
+	<g id="FaseDesarrollo">
+		<rect x="0" y="0" rx="10" ry="10" width="200" height="50" stroke="black" fill="white" stroke-width="2" transform="translate(340,20)"/>
+		<text x="440" y="45" text-anchor="middle" alignment-baseline="middle" font-family="sans-serif" font-size="20" font-weight="lighter" fill="#606060">
+			Fases de desarrollo</text>
+	</g>
+	<!-- Replanteo -->
+	<g onmouseover = "replanteoON()" onmouseout = "todoOFF()" id="replanteo">
+		<rect x="0" y="0" width="200" height="50" rx="10" ry="10" fill="green" opacity="0.3" stroke="black" stroke-width="2" transform="translate(340,110)" />
+		<text x="440" y="135" text-anchor="middle" alignment-baseline="middle" font-family="sans-serif" font-size="20" font-weight="lighter" fill="#606060">
+			Replanteo</text>
+	</g>
+	<!-- Montaje -->
+	<g onmouseover = "montajeON()" onmouseout = "todoOFF()" id="montaje">
+		<rect x="0" y="0" width="200" height="50" rx="10" ry="10" stroke="black" fill="green" opacity="0.5" stroke-width="2" transform="translate(340,200)"/>
+		<text x="440" y="225" text-anchor="middle" alignment-baseline="middle" font-family="sans-serif" font-size="20" font-weight="lighter" fill="#606060">
+			Montaje
+		</text>
+	</g>
+	<!-- Mantenimiento -->
+	<g onmouseover = "mantenimientoON()" onmouseout = "todoOFF()" id="mantenimiento">
+		<rect x="0" y="0" width="200" height="50" rx="10" ry="10" fill="green" opacity="0.7" stroke="black" stroke-width="2" transform="translate(340,290)"/>
+		<text x="440" y="315" text-anchor="middle" alignment-baseline="middle" font-family="sans-serif" font-size="20" font-weight="lighter" fill="#606060">
+			Mantenimiento
+		</text>
+	</g>
+	<!-- Mantenimiento vigilancia -->
+	<g onmouseover = "vigilanciaON()" onmouseout = "todoOFF()" id="prevencion">
+		<rect x="0" y="0" width="200" height="50" rx="10" ry="10" fill="green" opacity="0.9" stroke="black" stroke-width="2" transform="translate(40,380)"/>
+		<text x="140" y="405" text-anchor="middle" alignment-baseline="middle" font-family="sans-serif" font-size="18" font-weight="lighter" fill="black">
+			Plan de vigilancia
+		</text>
+	</g>
+	<!-- Prevención -->
+	<g onmouseover = "prevencionON()" onmouseout = "todoOFF()" id="vigilancia">
+		<rect x="0" y="0" width="200" height="50" rx="10" ry="10" fill="green" opacity="0.9" stroke="black" stroke-width="2" transform="translate(340,380)"/>
+		<text x="440" y="405" text-anchor="middle" alignment-baseline="middle" font-family="sans-serif" font-size="18" font-weight="lighter" fill="black">
+			<tspan>Plan de mantenimiento</tspan>
+			<tspan x="440" dy="1em">preventivo</tspan>
+		</text>
+	</g>
+	<!-- Mantenimiento correctivo -->
+	<g onmouseover = "correccionON()" onmouseout = "todoOFF()" id="correccion">
+		<rect x="0" y="0" width="200" height="50" rx="10" ry="10" fill="green" opacity="0.9" stroke="black" stroke-width="2" transform="translate(640,380)"/>
+		<text x="740" y="405" text-anchor="middle" alignment-baseline="middle" font-family="sans-serif" font-size="18" font-weight="lighter" fill="black">
+			<tspan>Plan de mantenimiento</tspan>
+			<tspan x="740" dy="1em">correctivo</tspan>
+		</text>
+	</g>
+	<!-- Uniones -->
+	<path id="uniones" d="m440 70 l 0 40 m0 50 l0 40 m0 50 l0 40 m0 50 l0 40 m -300 0 l0 -20 l 600 0 l 0 20" fill = "none" stroke = "black" stroke-width = "2"/>
+	
+	
+	<text x="175" y="220" text-anchor="middle" font-family="sans-serif" font-size="16" fill="blue" font-weight="lighter">
+		<tspan alignment-baseline="text-before-edge">Pasa el ratón sobre</tspan>
+		<tspan x="175" dy="1.5em" alignment-baseline="text-before-edge">las fases</tspan>
+	</text>
+	<!-- Textos -->
+	<text id="textoReplanteo" x="580" y="30" font-family="sans-serif" font-size="16" font-weight="lighter" fill="none">
+	  	<tspan alignment-baseline="text-before-edge">El replanteo de la instalación es la primera operación que se realiza,</tspan>
+	    <tspan x="580" dy="1.5em" alignment-baseline="text-before-edge">antes de comenzar a ejecutar el montaje de la instalación. Consiste</tspan>
+		<tspan x="580" dy="1.5em" alignment-baseline="text-before-edge">en realizar, sobre el terreno, un replanteo de lo que viene recogido</tspan>
+		<tspan x="580" dy="1.5em" alignment-baseline="text-before-edge">en los diferentes planos y documentos del proyecto una vez analizada</tspan>
+		<tspan x="580" dy="1.5em" alignment-baseline="text-before-edge">la situación real del lugar donde se debe realizar la instalación. A</tspan>
+		<tspan x="580" dy="1.5em" alignment-baseline="text-before-edge">menudo ocurre que debido a la situación o estado de, por ejemplo, el</tspan>
+		<tspan x="580" dy="1.5em" alignment-baseline="text-before-edge">tejado no podemos colocar el campo fotovoltaico tal y como nos</tspan>
+		<tspan x="580" dy="1.5em" alignment-baseline="text-before-edge">viene indicado en el proyecto o que debido al paso de conducciones</tspan>
+		<tspan x="580" dy="1.5em" alignment-baseline="text-before-edge">de gas u otros servicios no podemos pasar las conducciones</tspan>
+		<tspan x="580" dy="1.5em" alignment-baseline="text-before-edge">eléctricas por donde se nos indica.</tspan>
+	</text>
+	<text id="textoMontaje" x="580" y="30" font-family="sans-serif" font-size="16" font-weight="lighter" fill="none">
+	  	<tspan alignment-baseline="text-before-edge">Esta es la actividad mis importante a realizar por el técnico. Para su</tspan>
+	    <tspan x="580" dy="1.5em" alignment-baseline="text-before-edge">correcta realización se requiere tener la formación correspondiente a</tspan>
+		<tspan x="580" dy="1.5em" alignment-baseline="text-before-edge">las técnicas de montaje, conexión y puesta en marcha de los diferentes</tspan>
+		<tspan x="580" dy="1.5em" alignment-baseline="text-before-edge">elementos de la instalación. El montaje se debe realizar conforme a la</tspan>
+		<tspan x="580" dy="1.5em" alignment-baseline="text-before-edge">normativa vigente, en el tiempo especificado y con la calidad requerida</tspan>
+		<tspan x="580" dy="1.5em" alignment-baseline="text-before-edge">en este tipo de instalaciones.</tspan>
+		<tspan x="580" dy="1.5em" alignment-baseline="text-before-edge">Podemos dividir esta actividad en las siguientes operaciones:</tspan>
+		<tspan x="580" dy="1.5em" alignment-baseline="text-before-edge">Interpretación de la documentación del proyecto.</tspan>
+		<tspan x="580" dy="1.5em" alignment-baseline="text-before-edge">Definición de los materiales, medios técnicos y humanos necesarios.</tspan>
+		<tspan x="580" dy="1.5em" alignment-baseline="text-before-edge">Acopio de materiales y medios técnicos.</tspan>
+		<tspan x="580" dy="1.5em" alignment-baseline="text-before-edge">Verificación de la recepción de los materiales.</tspan>
+		<tspan x="580" dy="1.5em" alignment-baseline="text-before-edge">Realizar las operaciones de montaje.</tspan>
+		<tspan x="580" dy="1.5em" alignment-baseline="text-before-edge">Comprobación y puesta en marcha de la instalación.</tspan>
+	</text>
+	<text id="textoMantenimiento" x="580" y="150" font-family="sans-serif" font-size="16" font-weight="lighter" fill="none">
+	  	<tspan alignment-baseline="text-before-edge">Un correcto mantenimiento de la instalación solar fotovoltaica</tspan>
+	    <tspan x="580" dy="1.5em" alignment-baseline="text-before-edge">proporcionará, no sólo una mayor cantidad de energía eléctrica, sino</tspan>
+		<tspan x="580" dy="1.5em" alignment-baseline="text-before-edge">sino también un mayor beneficio económico y medioambiental. Por</tspan>
+		<tspan x="580" dy="1.5em" alignment-baseline="text-before-edge">otro lado, hace posible una mayor protección de la instalación solar</tspan>
+		<tspan x="580" dy="1.5em" alignment-baseline="text-before-edge">frente a los posibles fallos y problemas de la red eléctrica.</tspan>
+		<tspan x="580" dy="1.5em" alignment-baseline="text-before-edge">Para ello, se definen tres planes de actuación: vigilancia, mantenimiento</tspan>
+		<tspan x="580" dy="1.5em" alignment-baseline="text-before-edge">preventivo y mantenimiento correctivo, que engloban todas las operaciones</tspan>
+		<tspan x="580" dy="1.5em" alignment-baseline="text-before-edge">necesarias durante la vida útil de la instalación.</tspan>
+	</text>
+	<text id="textoVigilancia" x="60" y="460" font-family="sans-serif" font-size="16" font-weight="lighter" fill="none">
+	  	<tspan alignment-baseline="text-before-edge">El plan de vigilancia se refiere básicamente a las operaciones que permiten asegurar que los valores</tspan>
+	    <tspan x="60" dy="1.5em" alignment-baseline="text-before-edge">operacionales de la instalación sean correctos. Es un plan de observación simple de los parámetros</tspan>
+		<tspan x="60" dy="1.5em" alignment-baseline="text-before-edge">funcionales principales, para verificar el correcto funcionamiento de la instalación.</tspan>
+		<tspan x="60" dy="1.5em" alignment-baseline="text-before-edge">Debe ser llevado a cabo por el titular de la instalación. Siendo siempre la atención preventiva</tspan>
+		<tspan x="60" dy="1.5em" alignment-baseline="text-before-edge">por parte del usuario la base más sólida de un programa de mantenimiento.</tspan>
+	</text>
+	<text id="textoPrevencion" x="60" y="460" font-family="sans-serif" font-size="16" font-weight="lighter" fill="none">
+	  	<tspan alignment-baseline="text-before-edge">Son operaciones de inspección visual, verificación de actuaciones y otras, que aplicadas a la instalación</tspan>
+	    <tspan x="60" dy="1.5em" alignment-baseline="text-before-edge">solar fotovoltaica permiten mantener dentro de límites aceptables las condiciones de funcionamiento,</tspan>
+		<tspan x="60" dy="1.5em" alignment-baseline="text-before-edge">prestaciones, protección y durabilidad de la misma. En el mantenimiento preventivo se pueden solucionar</tspan>
+		<tspan x="60" dy="1.5em" alignment-baseline="text-before-edge">pequeños inconvenientes antes de que lleguen a afectar al funcionamiento del sistema, o a la capacidad</tspan>
+		<tspan x="60" dy="1.5em" alignment-baseline="text-before-edge">de producción de energía eléctrica.</tspan>
+		<tspan x="60" dy="1.5em" alignment-baseline="text-before-edge">Estos trabajos deben realizarse por personal técnico especializado y bajo la responsabilidad de la empresa</tspan>
+		<tspan x="60" dy="1.5em" alignment-baseline="text-before-edge">instaladora autorizada.</tspan>
+	</text>
+	<text id="textoCorreccion" x="60" y="460" font-family="sans-serif" font-size="16" font-weight="lighter" fill="none">
+	  	<tspan alignment-baseline="text-before-edge">Son los trabajos y las operaciones realizadas como consecuencia de la detección de cualquier anomalía</tspan>
+	    <tspan x="60" dy="1.5em" alignment-baseline="text-before-edge">en el funcionamiento de la instalación solar fotovoltaica, en el plan de vigilancia o en el mantenimiento</tspan>
+		<tspan x="60" dy="1.5em" alignment-baseline="text-before-edge">preventivo.</tspan>
+		<tspan x="60" dy="1.5em" alignment-baseline="text-before-edge">Estos trabajos deben realizarse por personal técnico especializado y bajo la responsabilidad de la empresa</tspan>
+		<tspan x="60" dy="1.5em" alignment-baseline="text-before-edge">instaladora autorizada.</tspan>
+	</text>
+	
+
+
+
+
+
+
+
+
+
+	
+	
+	
+</svg>
