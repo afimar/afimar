@@ -3,44 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejercicios de Electrotecnia</title>
-    
+    <title>Plataforma de Electrotecnia</title>
     <style>
         body { font-family: 'Segoe UI', Tahoma, Verdana, sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 20px; color: #333; }
-        h1 { color: #0056b3; border-bottom: 2px solid #eee; padding-bottom: 10px; }
-        .ejercicio { background: #f9f9f9; padding: 20px; border-radius: 8px; border-left: 5px solid #0056b3; margin-bottom: 30px; }
-        .etiqueta { font-weight: bold; color: #555; }
-        .esquema { display: block; margin: 20px auto; max-width: 100%; height: auto; }
-        details { background: #e8f4f8; padding: 15px; border-radius: 5px; margin-top: 15px; cursor: pointer; }
-        summary { font-weight: bold; color: #0056b3; outline: none; }
+        h1 { color: #0056b3; border-bottom: 2px solid #eee; padding-bottom: 10px; text-align: center; }
+        .intro { text-align: center; margin-bottom: 40px; color: #555; }
+        
+        /* Estilos para el menú de bloques temáticos */
+        .grid-categorias { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+        .tarjeta-categoria { background: #f9f9f9; border: 1px solid #ddd; border-radius: 8px; padding: 20px; text-align: center; transition: transform 0.2s, box-shadow 0.2s; text-decoration: none; color: inherit; display: block; }
+        .tarjeta-categoria:hover { transform: translateY(-5px); box-shadow: 0 5px 15px rgba(0,86,179,0.1); border-color: #0056b3; }
+        .tarjeta-categoria h2 { color: #0056b3; margin-top: 0; font-size: 1.4em; }
+        .tarjeta-categoria p { color: #666; font-size: 0.9em; }
     </style>
-
-    <script>
-    MathJax = {
-      tex: { inlineMath: [['$', '$'], ['\\(', '\\)']], displayMath: [['$$', '$$'], ['\\[', '\\]']], processEscapes: true },
-      svg: { fontCache: 'global' }
-    };
-    </script>
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body>
 
-    <h1>Fundamentos de Electrotecnia</h1>
-    <p>Ejercicios resueltos paso a paso.</p>
+    <h1>Ejercicios Resueltos de Electrotecnia</h1>
+    <p class="intro">Selecciona un bloque temático para empezar a practicar.</p>
 
-    <div class="ejercicio">
-        <h2>Problema 1: Cálculo de Mallas</h2>
-        <p><span class="etiqueta">Enunciado:</span> Dado el siguiente circuito, calcula la intensidad $I_1$ utilizando las Leyes de Kirchhoff.</p>
-        
-        <img src="assets/img/circuito-01.svg" alt="Esquema del circuito eléctrico" class="esquema">
-        
-        <details>
-            <summary>Mostrar solución paso a paso</summary>
-            <p>Aplicando la Segunda Ley de Kirchhoff (Ley de Tensiones) a la malla principal obtenemos la siguiente ecuación:</p>
-            $$V_S - I_1 \cdot R_1 - I_1 \cdot R_2 = 0$$
-            <p>Despejando y sustituyendo valores:</p>
-            $$I_1 = \frac{V_S}{R_1 + R_2}$$
-        </details>
+    <div class="grid-categorias">
+        <a href="continua/" class="tarjeta-categoria">
+            <h2>Corriente Continua</h2>
+            <p>Leyes de Kirchhoff, Divisores, Thevenin, Norton y Análisis de Mallas/Nudos.</p>
+        </a>
+
+        <a href="alterna/" class="tarjeta-categoria">
+            <h2>Corriente Alterna</h2>
+            <p>Fasores, Impedancias, Potencia Activa/Reactiva/Aparente y Corrección del Factor de Potencia.</p>
+        </a>
+
+        <a href="trifasica/" class="tarjeta-categoria">
+            <h2>Sistemas Trifásicos</h2>
+            <p>Conexiones Estrella/Triángulo, Cargas desequilibradas y Método de los dos vatímetros.</p>
+        </a>
     </div>
 
 </body>
